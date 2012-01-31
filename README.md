@@ -6,7 +6,7 @@ It uses new [Resources Plugin](http://grails.org/plugin/resources) to handle res
 Just let your AngularJS resources depend on 'angular' module and it's done.
 
 The plugin serves minified version for environments other than development. If jQuery plugin is installed
-it automatically depends on it (inspired by great [Twitter Bootstrap Plugin](http://grails.org/plugin/twitter-bootstrap).
+it automatically depends on it (inspired by great [Twitter Bootstrap Plugin](http://grails.org/plugin/twitter-bootstrap)).
 
 The plugin is not yet available on the grails repository, install it by running following command
 
