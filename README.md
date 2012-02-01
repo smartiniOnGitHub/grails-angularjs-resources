@@ -11,5 +11,5 @@ it automatically depends on it (inspired by great [Twitter Bootstrap Plugin](htt
 The plugin is not yet available on the grails repository, install it by running following command
 
 ```
-  grails install-plugin http://cloud.github.com/downloads/musketyr/grails-angularjs/grails-angularjs-0.1.8.zip
+  grails install-plugin http://cloud.github.com/downloads/musketyr/grails-angularjs/grails-angularjs-0.1.9.zip
 ```
