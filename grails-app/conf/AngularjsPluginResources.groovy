@@ -11,8 +11,13 @@ modules = {
 			dependsOn 'jquery'
 		}
         resource id: 'angular', url:[plugin: 'angularjs', dir:'js/angular', file: jsFile], nominify: !dev
-		resource url:[plugin: 'angularjs', dir:'js/angular', file: 'angular-manual.js'], nominify: true
     }
+	
+	'angular-autobind' {
+		defaultBundle 'angular'
+		dependsOn 'angular'
+		resource url:[plugin: 'angularjs', dir:'js/angular', file: 'angular-manual.js'], nominify: true
+	}
 	
 	'angular-mock' {
 		resource url:[plugin: 'angularjs', dir:'js/angular', file:"angular-mocks.js"]
