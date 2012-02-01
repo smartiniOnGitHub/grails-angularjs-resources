@@ -10,22 +10,22 @@ modules = {
 		if(jqueryPlugin){
 			dependsOn 'jquery'
 		}
-        resource id: 'angular', url:[plugin: 'angularjs', dir:'js/angular', file: jsFile], nominify: !dev
+        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], nominify: !dev
     }
 	
 	'angular-autobind' {
 		defaultBundle 'angular'
 		dependsOn 'angular'
-		resource url:[plugin: 'angularjs', dir:'js/angular', file: 'angular-manual.js'], nominify: true
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file: 'angular-manual.js'], nominify: true
 	}
 	
 	'angular-mock' {
-		resource url:[plugin: 'angularjs', dir:'js/angular', file:"angular-mocks.js"]
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:"angular-mocks.js"]
 			
 	}
 	
 	'angular-scenario' {
-		resource url:[plugin: 'angularjs', dir:'js/angular', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
 			
 	}
 	
