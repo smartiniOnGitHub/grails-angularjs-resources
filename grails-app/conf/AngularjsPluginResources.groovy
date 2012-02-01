@@ -22,4 +22,24 @@ modules = {
 		resource url:[plugin: 'angularjs', dir:'js/angular', file:"angular-scenario.js"]
 			
 	}
+	
+	'angular-services'{
+		dependsOn 'angular'	
+	}
+	
+	'angular-controllers'{
+		dependsOn 'angular-services'
+	}
+	
+	'angular-filters'{
+		dependsOn 'angular-controllers'
+	}
+	
+	'angular-widgets'{
+		dependsOn 'angular-filters'
+	}
+	
+	
+	
+	
 }
