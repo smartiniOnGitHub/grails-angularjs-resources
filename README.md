@@ -1,4 +1,4 @@
-# Grails AngularJS Plugin
+# Grails AngularJS Resources Plugin
 
 This plugin adds [AngularJS](http://angularjs.org/) resources to the Grails Application.
 
