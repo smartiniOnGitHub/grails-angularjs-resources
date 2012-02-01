@@ -1,4 +1,4 @@
-<plugin name='angularjs' version='0.2.0' grailsVersion='1.3.7 &gt; *'>
+<plugin name='angularjs' version='0.2.0.2' grailsVersion='1.3.7 &gt; *'>
   <author>Vladimír Oraný</author>
   <authorEmail>vladimir.orany@appsatori.eu</authorEmail>
   <title>AngularJS Plugin</title>
@@ -8,6 +8,8 @@
   <type>AngularjsGrailsPlugin</type>
   <resources>
     <resource>AngularjsPluginResources</resource>
+    <resource>AngularjsUrlMappings</resource>
+    <resource>angularjs.Nge2eController</resource>
   </resources>
   <repositories>
     <repository name='grailsCentral' url='http://plugins.grails.org' />

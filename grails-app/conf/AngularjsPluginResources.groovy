@@ -25,7 +25,7 @@ modules = {
 	}
 	
 	'angular-scenario' {
-		resource url:[plugin: 'angularjs', dir:'js/angular', file:"angular-scenario.js"]
+		resource url:[plugin: 'angularjs', dir:'js/angular', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
 			
 	}
 	
