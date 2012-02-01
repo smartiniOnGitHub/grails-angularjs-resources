@@ -19,7 +19,11 @@
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
   </repositories>
   <dependencies />
-  <plugins />
+  <plugins>
+    <runtime>
+      <plugin group='org.grails.plugins' name='resources' version='1.1.5' />
+    </runtime>
+  </plugins>
   <runtimePluginRequirements>
     <plugin name='resources' version='1.0 &gt; *' />
   </runtimePluginRequirements>
