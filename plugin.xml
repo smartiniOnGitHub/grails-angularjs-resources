@@ -7,6 +7,7 @@
   <documentation>http://grails.org/plugin/angularjs-resources</documentation>
   <type>AngularjsResourcesGrailsPlugin</type>
   <resources>
+    <resource>AngularjsPluginResources</resource>
     <resource>AngularjsResourcesPluginResources</resource>
     <resource>AngularjsResourcesUrlMappings</resource>
     <resource>angularjs.Nge2eController</resource>
@@ -19,11 +20,7 @@
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
   </repositories>
   <dependencies />
-  <plugins>
-    <runtime>
-      <plugin group='org.grails.plugins' name='resources' version='1.1.5' />
-    </runtime>
-  </plugins>
+  <plugins />
   <runtimePluginRequirements>
     <plugin name='resources' version='1.0 &gt; *' />
   </runtimePluginRequirements>
