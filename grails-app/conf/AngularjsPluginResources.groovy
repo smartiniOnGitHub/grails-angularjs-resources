@@ -6,10 +6,11 @@ def jsFile = dev ? "angular.js" :"angular.min.js"
 
 modules = {
 	'angular' {
+		defaultBundle 'angular'
 		if(jqueryPlugin){
 			dependsOn 'jquery'
 		}
-        resource url:[plugin: 'angularjs', dir:'js/angular', file: jsFile], nominify: !dev
+        resource id: 'angular', url:[plugin: 'angularjs', dir:'js/angular', file: jsFile], nominify: !dev
 		resource url:[plugin: 'angularjs', dir:'js/angular', file: 'angular-manual.js'], nominify: true
     }
 	
@@ -24,11 +25,13 @@ modules = {
 	}
 	
 	'angular-services'{
-		dependsOn 'angular'	
+		dependsOn 'angular'
+		defaultBundle 'angular'
 	}
 	
 	'angular-controllers'{
 		dependsOn 'angular-services'
+		defaultBundle 'angular'
 	}
 	
 	'angular-filters'{
@@ -37,6 +40,7 @@ modules = {
 	
 	'angular-widgets'{
 		dependsOn 'angular-filters'
+		defaultBundle 'angular'
 	}
 	
 	
