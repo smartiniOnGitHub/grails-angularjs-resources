@@ -12,9 +12,9 @@ The scenario module must depend on 'angular-scenario'.
 The plugin serves minified version for environments other than development. If jQuery plugin is installed
 it automatically depends on it (inspired by great [Twitter Bootstrap Plugin](http://grails.org/plugin/twitter-bootstrap)).
 
-The plugin is not yet available on the grails repository, install it by running following command
+To install the plugin just type
 
 ```
-  grails install-plugin http://cloud.github.com/downloads/musketyr/grails-angularjs-resources/grails-angularjs-resources.0.1.1.zip
+  grails install-plugin angularjs-resources
 ```
 
