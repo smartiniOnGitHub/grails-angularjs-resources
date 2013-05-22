@@ -1,5 +1,30 @@
-/target
-/target-eclipse
-/.link_to_grails_plugins
-/.link_to_grails_plugins
+.DS_Store
+.hg
+.svn
+.gradle
+.cache
+.metadata
+.settings
+# .classpath
+# .project
+*.log
+*.iws
+# *Db.properties
+# *Db.script
+*~*
+# *~
+*.bak
+/*.db
 /*.zip
+/plugin.xml
+/*DB.*
+/*.ser
+/.link_to_grails_plugins/
+/_old/
+/out/
+/private/
+# /server/
+/target/
+/target-eclipse/
+/temp/
+/web-app
