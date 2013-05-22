@@ -16,7 +16,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<project name="pivot" default="trim-whitespace"
+<project name="plugin" default="trim-whitespace"
     xmlns:artifact="antlib:org.apache.maven.artifact.ant"
 >
 
