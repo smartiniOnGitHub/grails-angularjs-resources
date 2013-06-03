@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 	<title>AngularJS E2E Scenario Runner</title>
@@ -6,9 +6,8 @@
 	<g:layoutHead/>
 	<r:layoutResources/>
 </head>
-
 <body>
-<g:layoutBody/>
-<r:layoutResources/>
+	<g:layoutBody/>
+	<r:layoutResources/>
 </body>
 </html>
