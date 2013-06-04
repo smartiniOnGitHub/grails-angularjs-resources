@@ -27,7 +27,7 @@ modules = {
 		if(jqueryPlugin){
 			dependsOn 'jquery'
 		}
-        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], nominify: !dev
+        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], nominify: dev
     }
 	
 	'angular-autobind' {
