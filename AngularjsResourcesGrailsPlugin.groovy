@@ -19,8 +19,8 @@ class AngularjsResourcesGrailsPlugin {
     def version = "0.2.5"
     def grailsVersion = "2.0 > *"
     def title = "AngularJS Resources Plugin"
-    def author = "Vladimír Oraný"
-    def authorEmail = "vladimir.orany@appsatori.eu"
+    def author = "Sandro Martini, originally developed by Vladimír Oraný"
+    def authorEmail = "sandro.martini@gmail.com"
     def description = 'Angular JS resources plugin.'
     def documentation = "http://grails.org/plugin/angularjs-resources"
 

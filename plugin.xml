@@ -1,6 +1,6 @@
 <plugin name='angularjs-resources' version='0.2.5' grailsVersion='2.0 &gt; *'>
-  <author>Vladimír Oraný</author>
-  <authorEmail>vladimir.orany@appsatori.eu</authorEmail>
+  <author>Sandro Martini, originally developed by Vladimír Oraný</author>
+  <authorEmail>sandro.martini@gmail.com</authorEmail>
   <title>AngularJS Resources Plugin</title>
   <description>Angular JS resources plugin.</description>
   <documentation>http://grails.org/plugin/angularjs-resources</documentation>
