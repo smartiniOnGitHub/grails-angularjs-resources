@@ -50,6 +50,7 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
 
 // What URL patterns should be processed by the resources plugin
 grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
+// grails.resources.debug = true
 
 
 // The default codec used to encode data with ${}
@@ -109,4 +110,5 @@ log4j = {
            'net.sf.ehcache.hibernate'
 
     // optional, add higher logging level for the given package
+	// debug 'org.grails.plugin.resource'  // attention, this generates a lot of log ...
 }

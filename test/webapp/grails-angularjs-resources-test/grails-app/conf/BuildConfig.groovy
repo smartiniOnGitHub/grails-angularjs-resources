@@ -32,7 +32,7 @@ grails.project.dependency.resolution = {
         // uncomment to disable ehcache
         // excludes 'ehcache'
     }
-    log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
 
     repositories {
@@ -59,11 +59,12 @@ grails.project.dependency.resolution = {
     plugins {
         // compile "org.grails.plugins:spring-security-core:1.2.7.3"
         // compile "org.grails.plugins:mongodb:1.1.0.GA"
+        // compile "org.grails.plugins:mongodb:1.2.0"
 
         runtime ":hibernate:$grailsVersion"
         runtime ":jquery:1.8.3"
         runtime ":resources:1.1.6"
-        // runtime ":resources:1.2.RC2"
+        // runtime ":resources:1.2"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0"

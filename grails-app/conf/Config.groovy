@@ -24,11 +24,13 @@ log4j = {
 	      'net.sf.ehcache.hibernate'
 
 	warn   'org.mortbay.log'
+
+	// debug 'org.grails.plugin.resource'
 }
 
 grails.views.default.codec="none" // none, html, base64
 grails.views.gsp.encoding="UTF-8"
 
-grails.doc.authors = 'Sandro Martini'
+grails.doc.authors = 'Sandro Martini, originally developed by Vladimír Oraný'
 grails.doc.license = 'Apache License 2.0'
 grails.doc.title   = 'AngularJS Grails Plugin'
