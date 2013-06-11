@@ -15,11 +15,18 @@
  * limitations under the License.
  */
 
-def dev = grails.util.GrailsUtil.isDevelopmentEnv()
+import grails.util.Environment
+
+// def dev  = grails.util.GrailsUtil.isDevelopmentEnv()
+def dev  = Environment.current == Environment.DEVELOPMENT
+def test = Environment.current == Environment.TEST
+def isDevOrTestEnvironment = (dev || test)
+
 def applicationContext = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext
 def jqueryPlugin = applicationContext.pluginManager.getGrailsPlugin('jquery')
 
-def jsFile = dev ? "angular.js" :"angular.min.js"
+def jsFile = isDevOrTestEnvironment ? "angular.js" : "angular.min.js"
+
 
 modules = {
 	'angular' {
@@ -27,7 +34,8 @@ modules = {
 		if(jqueryPlugin){
 			dependsOn 'jquery'
 		}
-        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], nominify: dev
+        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], 
+			nominify: isDevOrTestEnvironment
     }
 	
 	'angular-autobind' {
