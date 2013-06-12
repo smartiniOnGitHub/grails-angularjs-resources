@@ -1,6 +1,11 @@
 package grails.angularjs.resources.test
 
-class AngularSampleGrailsController {
+class AngularSampleGrailsController 
+{
 
-    def index() { }
+    def index() 
+	{
+		render(view: "index")
+	}
+
 }
