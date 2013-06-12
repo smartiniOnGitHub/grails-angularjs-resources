@@ -1,0 +1,22 @@
+h4. Installing the plugin
+
+First you need to install the plugin into a Grails application:
+using the recommended way, configure it as a dependency in @BuildConfig.groovy@:
+{code}
+plugins {
+    runtime ':angularjs-resources:<plugin version>'
+}
+{code}
+
+or the old way:
+{code}
+grails install-plugin angularjs-resources
+{code}
+
+
+h4. Requirements
+
+* a Servlet container to run the Web application
+
+
+

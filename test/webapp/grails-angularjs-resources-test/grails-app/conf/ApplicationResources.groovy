@@ -25,7 +25,7 @@ modules = {
     }
 
     index {
-        resource url:'js/app.js'
+        // resource url:'js/app.js'
     }
 
 }

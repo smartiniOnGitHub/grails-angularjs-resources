@@ -1,0 +1,17 @@
+h4. Samples
+
+In Plugin sources under the [test|https://github.com/smartiniOnGitHub/grails-angularjs-resources/tree/master/test/] folder 
+there there are some initial unit and integration tests,
+and even an inline test webapp (much more useful).
+
+
+h4. AngularJS documentation
+
+Look at AngularJS Tutorial
+[AngularJS Tutorial|http://docs.angularjs.org/tutorial]
+
+Note that there is even a Reference minimal Template project, to better see how to structure a pure AngularJS application, 
+called [Angular-Seed|https://github.com/angular/angular-seed], look at it for more info 
+but note that it's a pure HTML5/JavaScript web application.
+
+

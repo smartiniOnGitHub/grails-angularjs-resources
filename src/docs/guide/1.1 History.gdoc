@@ -1,0 +1,11 @@
+h4. History
+
+* June 2013
+** 1.0.6 release
+*** Updated to AngularJS 1.0.6
+*** My first version (took ownership of the plugin, thanks to the original author), with some cleanup of plugin (removed unnecessary files, and other small adjustments)
+
+* September 2012
+** 1.0.2 release
+*** Updated to AngularJS 1.0.1 or 1.0.2
+*** Done by plugin original author
