@@ -16,13 +16,13 @@
  */
 
 class AngularjsResourcesGrailsPlugin {
-    def version = "1.0.6"
+    def version = "1.0.7"
     def grailsVersion = "2.0 > *"
     def title = "AngularJS Resources Plugin"
     def author = "Sandro Martini, originally developed by Vladimír Oraný"
     def authorEmail = "sandro.martini@gmail.com"
-    def description = 'Angular JS resources plugin.'
-    def documentation = "http://grails.org/plugin/angularjs-resources"
+    def description = "Angular JS resources plugin"
+    def documentation = "http://smartiniongithub.github.com/grails-angularjs-resources/"
 
     def license = "APACHE"
     def issueManagement = [ system: "github", url: "https://github.com/smartiniOnGitHub/grails-angularjs-resources/issues/" ]
