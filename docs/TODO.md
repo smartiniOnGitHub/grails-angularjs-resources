@@ -5,7 +5,6 @@ TODO
 ----
 
 - finish initial version of the test webapp (more aligned to AngularJS-seed style) ...
-- before publishing the new release, set a version higher than the last published in Grails Repository, for example set 1.0.6 ...
 - re-generate documentation, and publish in my GitHUB Pages ...
 
 - just after publishing the new release, update docs/links in Grails Plugin web page ...
@@ -43,6 +42,9 @@ DONE
 
 - create documentation for the plugin and generate it ... ok
 	- in the History put a reference to original author: "Vladimír Oraný", email: "vladimir.orany@appsatori.eu" ... ok
+
+- as requested by a user, publish plugin release as is (updated but without finishing my tests and update docs) ... ok
+	- and tag it in git (but for simplicity use the same release number) ... ok
 
 
 ---------------
