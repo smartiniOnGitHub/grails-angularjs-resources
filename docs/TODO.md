@@ -4,7 +4,6 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- temp: update plugin version to 1.0.7 ... ok, now update AngularJS fuiles to 1.0.7 ...
 - finish initial version of the test webapp (more aligned to AngularJS-seed style) ...
 - re-generate documentation, and publish in my GitHUB Pages ...
 
@@ -46,6 +45,8 @@ DONE
 
 - as requested by a user, publish plugin release as is (updated but without finishing my tests and update docs) ... ok
 	- and tag it in git (but for simplicity use the same release number) ... ok
+
+- update plugin version to 1.0.7 ... ok, now update AngularJS files to 1.0.7 ... ok
 
 
 ---------------
