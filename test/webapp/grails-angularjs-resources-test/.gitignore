@@ -14,6 +14,7 @@
 *~*
 # *~
 *.bak
+Thumbs.db
 /*.db
 /*.zip
 /plugin.xml
