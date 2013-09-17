@@ -4,17 +4,18 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- temp: update plugin version to 1.0.8 ... ok, now update AngularJS files to 1.0.8 and continue my tests in the test webapp ...
-- finish initial version of the test webapp (more aligned to AngularJS-seed style) ...
-- re-generate documentation, and publish in my GitHUB Pages ...
+- for release 1.0.8a or 1.0.9 (small improvements/cleanup):
+	- continue (only) my tests in the test webapp ...
+
+- for release 1.2.0 (small improvements/cleanup):
+	- update to AngularJS 1.2.0 ...
+	- update dependencies to resources 1.2.x ...
+	- finish initial version of the test webapp (more aligned to AngularJS-seed style) ...
 
 - check/update install info in main README.md, and test it creating a new Grails webapp from scratch (but then delete it), important ...
 - improve documentation with a detailed Tutorial, from a Grails point of view ...
 
 
-- update dependencies to resources 1.2.x, but in a later plugin release (ex. 1.1.x or 1.2.x) ...
-
-- verify if remove angular-manual.js ...
 - verify if remove (or move in a test configuration) the angular-scenario.js (and other test-related sources, like angular-mocks.js) ...
 	- or verify al least if exclude those files with a dedicated flag (set up in the webapp that uses the plugin) ...
 
@@ -43,11 +44,19 @@ DONE
 - as requested by a user, publish plugin release as is (updated but without finishing my tests and update docs) ... ok
 	- and tag it in git (but for simplicity use the same release number) ... ok
 
-- update plugin version to 1.0.7 ... ok, now update AngularJS files to 1.0.7 ... ok
+- for release 1.0.7 (small improvements/cleanup):
+	- update plugin version to 1.0.7 ... ok
+	- update AngularJS to latest stable (currently 1.0.7), update docs, etc ... ok
+	- remove angular-manual.js (unless objections or problems) ... ok
+	- then re-tag and re-deploy the updated plugin ... ok
+	- re-generate documentation, and publish in my GitHUB Pages ... ok
+	- just after publishing the new release, update docs/links in Grails Plugin web page ... ok
 
-- update AngularJS to latest stable (currently 1.0.7), update docs, etc ... then re-tag and re-deploy the updated plugin ... ok
-- re-generate documentation, and publish in my GitHUB Pages ... ok
-- just after publishing the new release, update docs/links in Grails Plugin web page ... ok
+- for release 1.0.8 (small improvements/cleanup):
+	- update AngularJS files to 1.0.8 ... ok
+    - add Thumbs.db in pluginExcludes ... ok
+
+- reminder: re-generate documentation, and publish in my GitHUB Pages (in any release) ... ok
 
 
 ---------------

@@ -31,6 +31,7 @@ class AngularjsResourcesGrailsPlugin {
     def dependsOn = ['resources':'1.1.6 > *']
 
     def pluginExcludes = [
+		'**/Thumbs.db',
         'src/docs/**',
         'src/groovy/grails_angularjs_resources_test/**',
         'grails-app/views/error.gsp'
