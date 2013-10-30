@@ -36,7 +36,7 @@ modules = {
 			dependsOn 'jquery'
 		}
         resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: getJsFile("angular")],
-			nominify: isDevOrTestEnvironment
+			nominify: isDevOrTestEnvironment, disposition: 'defer'
     }
 
     'angular-sanitize' {
@@ -69,11 +69,11 @@ modules = {
     }
 	
 	'angular-mock' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/test/angular', file:"angular-mocks.js"]
+		resource url:[plugin: 'angularjs-resources', dir:'js/lib/test', file:"angular-mocks.js"]
 	}
 	
 	'angular-scenario' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/test/angular', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
+		resource url:[plugin: 'angularjs-resources', dir:'js/lib/test', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
 	}
 	
 	'angular-services'{
