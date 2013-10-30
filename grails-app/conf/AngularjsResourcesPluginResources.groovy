@@ -38,39 +38,42 @@ modules = {
         resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: getJsFile("angular")],
 			nominify: isDevOrTestEnvironment
     }
-	
-//	'angular-autobind' {
-//		defaultBundle 'angular'
-//		dependsOn 'angular'
-//		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file: 'angular-manual.js'], nominify: true
-//	}
 
     'angular-sanitize' {
         dependsOn 'angular'
         resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-sanitize")]
     }
-    'angular-bootstrap' {
+    'angular-touch' {
         dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-bootstrap")]
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-touch")]
     }
-    'angular-cookies' {
+    'angular-route' {
         dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-cookies")]
-    }
-    'angular-loader' {
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-loader")]
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-route")]
     }
     'angular-resource' {
         dependsOn 'angular'
         resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-resource")]
     }
+    'angular-loader' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-loader")]
+    }
+    'angular-cookies' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-cookies")]
+    }
+    'angular-animate' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-animate")]
+    }
 	
 	'angular-mock' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:"angular-mocks.js"]
+		resource url:[plugin: 'angularjs-resources', dir:'js/test/angular', file:"angular-mocks.js"]
 	}
 	
 	'angular-scenario' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
+		resource url:[plugin: 'angularjs-resources', dir:'js/test/angular', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
 	}
 	
 	'angular-services'{
