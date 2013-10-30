@@ -68,7 +68,7 @@ modules = {
         resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-animate")]
     }
 	
-	'angular-mock' {
+	'angular-mocks' {
 		resource url:[plugin: 'angularjs-resources', dir:'js/lib/test', file:"angular-mocks.js"]
 	}
 	

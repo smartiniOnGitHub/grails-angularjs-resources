@@ -13,6 +13,39 @@ or the old way:
 grails install-plugin angularjs-resources
 {code}
 
+currently, this plugin (1.2.0-RC3) exposes the following AngularJS files as grails resources:
+
+* angular.js as 'angular' module
+* angular-animate.js as 'angular-animate' module
+* angular-cookies.js as 'angular-cookies' module
+* angular-loader.js as 'angular-loader' module
+* angular-resource.js as 'angular-resource' module
+* angular-route.js as 'angular-route' module
+* angular-sanitize.js as 'angular-sanitize' module
+* angular-touch.js as 'angular-touch' module
+
+and for testing:
+* angular-mocks.js as 'angular-mocks' module
+* angular-scenario.js as 'angular-scenario' module
+
+let say you want to use angular-resource.js. you just need to defined dependency in your ApplicationResources.groovy
+
+{code}
+modules = {
+    'my-angular-module' {
+        dependsOn 'angular', 'angular-resource'
+        resource url:'js/app.js'
+        resource url:'js/services.js'
+        resource url:'js/controllers.js'
+        resource url:'js/filters.js'
+        resource url:'js/directives.js'
+    }
+}
+{code}
+
+Please refer to http://grails-plugins.github.io/grails-resources/ if you are not familiar with the above settings.
+
+
 
 h4. Requirements
 

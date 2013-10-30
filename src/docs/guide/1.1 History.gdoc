@@ -1,5 +1,10 @@
 h4. History
 
+* October 2013
+** 1.2.0-RC3 release
+*** Updated to AngularJS 1.2.0-RC3
+*** I just copied the files from angular-seed and expose it as grails-resource.
+
 * June 2013
 ** 1.0.6 release
 *** Updated to AngularJS 1.0.6

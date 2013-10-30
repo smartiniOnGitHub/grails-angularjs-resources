@@ -6,7 +6,6 @@ This plugin adds [AngularJS](http://angularjs.org/) resources to a Grails Applic
 
 It uses Grails [Resources Plugin](http://grails.org/plugin/resources) to handle resources gracefully.
 Just let your AngularJS resources (services, controllers etc.) depend on 'angular' module and it's done.
-To autobind AngularJS to the page require 'angular-autobind' module in the template.
 
 There is also controller for AngularJS scenario testing. Just navigate to `<app>/nge2e/<scenario-module-name>` to see the results.
 The scenario module must depend on 'angular-scenario'.
@@ -34,7 +33,7 @@ See the Plugin documentation (sources under src/docs/), or the "live" version he
 [grails-angularjs-resources docs](http://smartiniongithub.github.com/grails-angularjs-resources/)
 
 Home Page for the project (and sources) on GitHUB:
-[grails-angularjs-resources](https://github.com/smartiniOnGitHub/grails-angularjs-resourcesa/)
+[grails-angularjs-resources](https://github.com/smartiniOnGitHub/grails-angularjs-resources/)
 
 
 License

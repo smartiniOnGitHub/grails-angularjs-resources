@@ -4,6 +4,8 @@ In Plugin sources under the [test|https://github.com/smartiniOnGitHub/grails-ang
 there there are some initial unit and integration tests,
 and even an inline test webapp (much more useful).
 
+You might want to refer to https://github.com/arief-hidayat/grangular for another example.
+
 
 h4. AngularJS documentation
 
