@@ -16,7 +16,7 @@
  */
 
 class AngularjsResourcesGrailsPlugin {
-    def version = "0.2.5"
+    def version = "1.0.8-RC1"
     def grailsVersion = "2.0 > *"
     def title = "AngularJS Resources Plugin"
     def author = "Sandro Martini, originally developed by Vladimír Oraný"
@@ -28,7 +28,7 @@ class AngularjsResourcesGrailsPlugin {
     def issueManagement = [ system: "github", url: "https://github.com/smartiniOnGitHub/grails-angularjs-resources/issues/" ]
     def scm = [ url: "https://github.com/smartiniOnGitHub/grails-angularjs-resources/" ]
 
-    def dependsOn = ['resources':'1.1.6 > *']
+    def dependsOn = ['resources':'1.2.1 > *']
 
     def pluginExcludes = [
         'src/docs/**',

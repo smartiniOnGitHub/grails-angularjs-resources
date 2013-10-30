@@ -17,7 +17,6 @@
 
 import grails.util.Environment
 
-// def dev  = grails.util.GrailsUtil.isDevelopmentEnv()
 def dev  = Environment.current == Environment.DEVELOPMENT
 def test = Environment.current == Environment.TEST
 def isDevOrTestEnvironment = (dev || test)
@@ -25,7 +24,9 @@ def isDevOrTestEnvironment = (dev || test)
 def applicationContext = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext
 def jqueryPlugin = applicationContext.pluginManager.getGrailsPlugin('jquery')
 
-def jsFile = isDevOrTestEnvironment ? "angular.js" : "angular.min.js"
+def getJsFile(String name) {
+    (Environment.current in [Environment.DEVELOPMENT, Environment.TEST]) ? "${name}.js" : "${name}.min.js"
+}
 
 
 modules = {
@@ -34,15 +35,35 @@ modules = {
 		if(jqueryPlugin){
 			dependsOn 'jquery'
 		}
-        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], 
+        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: getJsFile("angular")],
 			nominify: isDevOrTestEnvironment
     }
 	
-	'angular-autobind' {
-		defaultBundle 'angular'
-		dependsOn 'angular'
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file: 'angular-manual.js'], nominify: true
-	}
+//	'angular-autobind' {
+//		defaultBundle 'angular'
+//		dependsOn 'angular'
+//		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file: 'angular-manual.js'], nominify: true
+//	}
+
+    'angular-sanitize' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-sanitize")]
+    }
+    'angular-bootstrap' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-bootstrap")]
+    }
+    'angular-cookies' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-cookies")]
+    }
+    'angular-loader' {
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-loader")]
+    }
+    'angular-resource' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-resource")]
+    }
 	
 	'angular-mock' {
 		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:"angular-mocks.js"]
