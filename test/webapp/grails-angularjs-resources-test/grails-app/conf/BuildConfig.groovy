@@ -52,19 +52,19 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        // runtime 'mysql:mysql-connector-java:5.1.21'
+        // runtime 'mysql:mysql-connector-java:5.1.27'
         // runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
     }
 
     plugins {
         // compile "org.grails.plugins:spring-security-core:1.2.7.3"
         // compile "org.grails.plugins:mongodb:1.1.0.GA"
-        // compile "org.grails.plugins:mongodb:1.2.0"
+		// compile "org.grails.plugins:mongodb:1.3.1"
 
         runtime ":hibernate:$grailsVersion"
-        runtime ":jquery:1.8.3"
-        runtime ":resources:1.1.6"
-        // runtime ":resources:1.2"
+        runtime ":jquery:1.10.2"
+        // runtime ":resources:1.1.6"
+        runtime ":resources:1.2.1"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0"
