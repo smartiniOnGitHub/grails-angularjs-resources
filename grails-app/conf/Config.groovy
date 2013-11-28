@@ -15,8 +15,6 @@
  * limitations under the License.
  */
 
-// configuration for plugin testing - will not be included in the plugin zip
-
 log4j = {
 	error 'org.codehaus.groovy.grails',
 	      'org.springframework',
@@ -27,9 +25,6 @@ log4j = {
 
 	// debug 'org.grails.plugin.resource'
 }
-
-grails.views.default.codec="none" // none, html, base64
-grails.views.gsp.encoding="UTF-8"
 
 grails.doc.authors = 'Sandro Martini, originally developed by Vladimír Oraný'
 grails.doc.license = 'Apache License 2.0'

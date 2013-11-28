@@ -41,5 +41,4 @@ grails.project.dependency.resolution = {
     }
 }
 
-grails.release.scm.enabled = false
 grails.project.repos.default = "grailsCentral"
