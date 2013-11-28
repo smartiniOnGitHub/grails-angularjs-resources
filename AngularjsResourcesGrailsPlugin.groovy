@@ -28,8 +28,6 @@ class AngularjsResourcesGrailsPlugin {
     def issueManagement = [ system: "github", url: "https://github.com/smartiniOnGitHub/grails-angularjs-resources/issues/" ]
     def scm = [ url: "https://github.com/smartiniOnGitHub/grails-angularjs-resources/" ]
 
-    def dependsOn = ['resources':'1.1.6 > *']
-
     def pluginExcludes = [
 		'**/Thumbs.db',
         'src/docs/**',
