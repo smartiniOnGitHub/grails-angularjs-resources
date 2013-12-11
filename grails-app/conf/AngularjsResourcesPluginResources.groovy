@@ -17,8 +17,7 @@
 
 import grails.util.Environment
 
-// def dev  = grails.util.GrailsUtil.isDevelopmentEnv()
-def dev  = Environment.current == Environment.DEVELOPMENT
+def dev  = Environment.isDevelopmentMode()
 def test = Environment.current == Environment.TEST
 def isDevOrTestEnvironment = (dev || test)
 
@@ -34,10 +33,10 @@ modules = {
 		if(jqueryPlugin){
 			dependsOn 'jquery'
 		}
-        resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], 
-			nominify: isDevOrTestEnvironment
-    }
-	
+		resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], 
+		         nominify: isDevOrTestEnvironment
+	}
+
 	'angular-autobind' {
 		defaultBundle 'angular'
 		dependsOn 'angular'

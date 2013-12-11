@@ -28,18 +28,14 @@ class AngularjsResourcesGrailsPlugin {
     def issueManagement = [ system: "github", url: "https://github.com/smartiniOnGitHub/grails-angularjs-resources/issues/" ]
     def scm = [ url: "https://github.com/smartiniOnGitHub/grails-angularjs-resources/" ]
 
-    def dependsOn = ['resources':'1.1.6 > *']
-
     def pluginExcludes = [
 		'**/Thumbs.db',
         'src/docs/**',
-        'src/groovy/grails_angularjs_resources_test/**',
-        'grails-app/views/error.gsp'
+        'src/groovy/grails_angularjs_resources_test/**'
     ]
 
     def developers = [ 
 		[name: "Vladimír Oraný", email: "vladimir.orany@appsatori.eu"],
 		[name: "Sandro Martini", email: "sandro.martini@gmail.com"],
 	]
-
 }
