@@ -9,6 +9,10 @@
 # .project
 *.log
 *.iws
+.idea/
+*.iml
+*.md5
+*.sha1
 # *Db.properties
 # *Db.script
 *~*

@@ -24,7 +24,10 @@ def isDevOrTestEnvironment = (dev || test)
 def applicationContext = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext
 def jqueryPlugin = applicationContext.pluginManager.getGrailsPlugin('jquery')
 
-def jsFile = isDevOrTestEnvironment ? "angular.js" : "angular.min.js"
+def getJsFile(String name) {
+	isDevOrTestEnvironment ? "${name}.js" : "${name}.min.js"
+}
+
 
 
 modules = {
@@ -33,22 +36,21 @@ modules = {
 		if(jqueryPlugin){
 			dependsOn 'jquery'
 		}
-		resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file: jsFile], 
-		         nominify: isDevOrTestEnvironment
+		resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular")], 
+		         nominify: isDevOrTestEnvironment, disposition: 'defer'
 	}
 
 	'angular-autobind' {
-		defaultBundle 'angular'
 		dependsOn 'angular'
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file: 'angular-manual.js'], nominify: true
+		defaultBundle 'angular'
 	}
 	
-	'angular-mock' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:"angular-mocks.js"]
+	'angular-mocks' {
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-mocks.js"]
 	}
 	
 	'angular-scenario' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
 	}
 	
 	'angular-services'{
