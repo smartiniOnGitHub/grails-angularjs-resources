@@ -12,7 +12,10 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
 		<g:layoutHead/>
-        <r:require modules="app"/>
+        <r:require modules="angular"/>
+		<!--  // implicit (so unnecessary here) because it has the same name used ...
+		<r:require modules="app"/>
+		//-->
 		<r:layoutResources />
 	</head>
 	<body>
@@ -21,9 +24,23 @@
 		</div>
 
 		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
+
+		<div class="footer" role="contentinfo">
+			<div>AngularJS, Variable binding samples: 
+				v<span app-version></span>
+				<!-- , webapp-context-name: <span app-webapp_context_name></span> -->
+			</div>
+		</div>
 
 		<g:javascript library="application"/>
         <r:layoutResources />
+
+		<!-- // manual version ...
+		<script src="js/app.js"/>
+		<script src="js/services.js"/>
+		<script src="js/controllers.js"/>
+		<script src="js/filters.js"/>
+		<script src="js/directives.js"/>
+		//-->
 	</body>
 </html>

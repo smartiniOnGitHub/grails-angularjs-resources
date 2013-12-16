@@ -1,1 +1,24 @@
+'use strict';
 
+// Declare app level module which depends on filters, and services
+angular.module('app', [
+	// 'ngRoute', // since AngularJS-1.2.0 ...
+	'app.filters',
+	'app.services',
+	'app.directives',
+	'app.controllers'
+]).
+config(['$routeProvider', function($routeProvider) {
+	// use relative url (as usual), but note that here Grails need that related pages
+	// must be under web-app/$controllerName/<relativePath> ...
+	// $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'AppCtrl1'});
+	// $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'AppCtrl2'});
+	// or use absolute url here (put related pages under web-app), for better reuse between Grails controllers,
+	// but note that the context name has to be provided here ...
+	// $routeProvider.when('/view1', {templateUrl: '/partials/partial1.html', controller: 'AppCtrl1'});
+	// $routeProvider.when('/view2', {templateUrl: '/partials/partial2.html', controller: 'AppCtrl2'});
+	// so it's simpler for now to use the relative approach ...
+	$routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'AppCtrl1'});
+	$routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'AppCtrl2'});
+	$routeProvider.otherwise({redirectTo: '/view1'});
+}]);
