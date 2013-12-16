@@ -40,11 +40,6 @@ modules = {
 		         nominify: isDevOrTestEnvironment, disposition: 'defer'
 	}
 
-	'angular-autobind' {
-		dependsOn 'angular'
-		defaultBundle 'angular'
-	}
-	
 	'angular-mocks' {
 		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-mocks.js"]
 	}
