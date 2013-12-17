@@ -1,5 +1,11 @@
 h4. History
 
+* January 2014
+** 1.2.0 release
+*** Updated to AngularJS 1.2.5
+*** Updated to Grails-2.2.x and the Grails Resources plugin 1.2.x
+*** Small updates/cleanup
+
 * December 2013
 ** 1.0.9 release
 *** Last release for AngularJS 1.0.x (it uses AngularJS 1.0.8)
