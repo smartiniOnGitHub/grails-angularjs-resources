@@ -4,13 +4,6 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.0.9 (small improvements/cleanup):
-	- remove remaining references to angular-manual.js in the angular-autobind section ... ok
-	- remove the (unnecessary now) angular-autobind section ... ok
-	- add some tests in the test webapp for a Grails Controller and related gsp pages ... ok
-	- add some tests in the test webapp for a Grails Controller but related html pages ...
-	- add some tests in the test webapp to call a Grails Controller that returns json data ...
-
 - for release 1.2.0 (small improvements/cleanup):
 	- update to AngularJS 1.2.5 or later ...
 	- update requirements to Grails-2.2.x (currently 2.2.4) ...
@@ -61,6 +54,13 @@ DONE
 - for release 1.0.8 (small improvements/cleanup):
 	- update AngularJS files to 1.0.8 ... ok
     - add Thumbs.db in pluginExcludes ... ok
+
+- for release 1.0.9 (small improvements/cleanup):
+	- remove remaining references to angular-manual.js in the angular-autobind section ... ok
+	- remove the (unnecessary now) angular-autobind section ... ok
+	- add some tests in the test webapp for a Grails Controller and related gsp pages ... ok
+	- add some tests in the test webapp to call a Grails Controller that returns json data ... ok
+	- add some tests in the test webapp for a Grails Controller but using only static html pages ... ok but still not fully working
 
 - reminder: re-generate documentation, and publish in my GitHUB Pages (in any release) ... ok
 

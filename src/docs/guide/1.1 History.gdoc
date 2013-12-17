@@ -1,5 +1,13 @@
 h4. History
 
+* December 2013
+** 1.0.9 release
+*** Last release for AngularJS 1.0.x (it uses AngularJS 1.0.8)
+*** Last release for Grails-2.0.x and the Grails Resources plugin 1.1.x
+*** Removed angular-manual/angular-autobind module (published via the resources plugin)
+*** Updated the test webapp (under test/webapp) for simple examples on how to use the plugin, see sources
+*** Small updates/cleanup
+
 * September 2013
 ** 1.0.8 release
 *** Updated to AngularJS 1.0.8

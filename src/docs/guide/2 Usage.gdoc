@@ -13,4 +13,7 @@ h4. Requirements
 * a Servlet container to run the Web application
 
 
+h4. Sample usage
+
+There is a sample/minimal test webapp (under test/webapp) with some examples on how to use the plugin, see sources.
 
