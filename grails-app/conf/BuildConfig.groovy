@@ -39,10 +39,7 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        runtime(':resources:1.1.6') {
-            export = false
-        }
-
+        runtime ':resources:1.1.6'
     }
 }
 
