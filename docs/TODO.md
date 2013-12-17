@@ -5,7 +5,9 @@ TODO
 ----
 
 - for release 1.2.0 (small improvements/cleanup):
-	- update to AngularJS 1.2.5 or later (and define new modules in resources config ) ...
+	- update to AngularJS 1.2.5 or later ... ok
+	- check if delete *.js.map files ... maybe later
+	- define new modules in resources config for new AngularJS files ...
 	- update requirements to Grails-2.2.x (currently 2.2.4) ... ok
 	- update dependencies to resources 1.2.1 or later ... ok
 	- update the test webapp to Grails-2.2.x (currently 2.2.4) ...
