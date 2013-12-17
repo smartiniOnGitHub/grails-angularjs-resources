@@ -29,3 +29,6 @@ log4j = {
 grails.doc.authors = 'Sandro Martini, originally developed by Vladimír Oraný'
 grails.doc.license = 'Apache License 2.0'
 grails.doc.title   = 'AngularJS Grails Plugin'
+
+grails.views.default.codec="none" // none, html, base64
+grails.views.gsp.encoding="UTF-8"
