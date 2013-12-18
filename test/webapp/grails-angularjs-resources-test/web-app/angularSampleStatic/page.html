@@ -64,6 +64,7 @@
 		<!--
 		// get AngularJS files from a local copy (not using the plugin that this webapp must test) ...
 		// of course this is not a recommended approach here ...
+		// note that these files are not committed, so you have to copy (by hand) in the referenced folder ...
 		<script src="../lib/angular/angular.js"></script>
 		<script src="../lib/angular/angular-route.js"></script>
 		//-->
@@ -71,7 +72,8 @@
 		// otherwise ask bundled scripts to Grails resources plugin (names extracted from a standard gsp page using them) ...
 		<script src="../static/bundle-angular_defer.js"></script>
 		//-->
-		<script src="../static/bundle-angular_defer.js"></script>
+		<script src="../lib/angular/angular.js"></script>
+		<script src="../lib/angular/angular-route.js"></script>
 
 		<!--
 		// get application js files for AngularJS ...
@@ -87,6 +89,10 @@
 		// but note that currently this is not working here ...
 		<script src="../static/bundle-bundle_app_defer.js"></script>
 		//-->
-		<script src="../static/bundle-bundle_app_defer.js"></script>
+		<script src="../js/app.js"></script>
+		<script src="../js/services.js"></script>
+		<script src="../js/controllers.js"></script>
+		<script src="../js/filters.js"></script>
+		<script src="../js/directives.js"></script>
 	</body>
 </html>
