@@ -10,8 +10,9 @@ Just let your AngularJS resources (services, controllers etc.) depend on 'angula
 There is also controller for AngularJS scenario testing. Just navigate to `<app>/nge2e/<scenario-module-name>` to see the results.
 The scenario module must depend on 'angular-scenario'.
 
-The plugin serves minified version for environments other than development. If jQuery plugin is installed
-it automatically depends on it (inspired by great Grails [Twitter Bootstrap Plugin](http://grails.org/plugin/twitter-bootstrap)).
+The plugin serves minified version for environments other than development. 
+If jQuery plugin is installed it automatically depends on it 
+(inspired by great Grails [Twitter Bootstrap Plugin](http://grails.org/plugin/twitter-bootstrap)).
 
 
 Installation
@@ -34,6 +35,13 @@ See the Plugin documentation (sources under src/docs/), or the "live" version he
 
 Home Page for the project (and sources) on GitHUB:
 [grails-angularjs-resources](https://github.com/smartiniOnGitHub/grails-angularjs-resources/)
+
+
+Usage
+=====
+
+See the inline test web application (sources under test/webapp/) here:
+[grails-angularjs-resources-test](test/webapp/grails-angularjs-resources-test/)
 
 
 License

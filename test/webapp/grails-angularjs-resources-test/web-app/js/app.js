@@ -2,7 +2,7 @@
 
 // Declare app level module which depends on filters, and services
 angular.module('app', [
-	// 'ngRoute', // since AngularJS-1.2.0 ...
+	'ngRoute', // since AngularJS-1.2.x ...
 	'app.filters', 'app.services', 'app.directives', 'app.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {

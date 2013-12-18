@@ -21,6 +21,13 @@ modules = {
     }
 
     app {
+		dependsOn 'angular',  // add base angular modules ...
+			// add even all other angular modules defined in the plugin ...
+			'angular-animate', 'angular-cookies', 'angular-loader', 
+			'angular-resource', 'angular-route', 
+			'angular-sanitize', 'angular-touch'
+			// add even angular test-only modules ... not now
+			// 'angular-mocks', 'angular-scenario'
         resource url:'js/app.js'
         resource url:'js/services.js'
         resource url:'js/controllers.js'

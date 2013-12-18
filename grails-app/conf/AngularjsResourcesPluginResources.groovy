@@ -33,35 +33,63 @@ def getJsFile(String name) {
 modules = {
 	'angular' {
 		defaultBundle 'angular'
-		if(jqueryPlugin){
+		if (jqueryPlugin) {
 			dependsOn 'jquery'
 		}
-		resource id: 'angular', url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular")], 
-		         nominify: isDevOrTestEnvironment, disposition: 'defer'
+		resource id: 'angular', 
+			url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular")], 
+			nominify: isDevOrTestEnvironment, 
+			disposition: 'defer'
 	}
+
+    'angular-animate' {
+		dependsOn 'angular'
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-animate")]
+    }
+    'angular-cookies' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-cookies")]
+    }
+    'angular-loader' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-loader")]
+    }
+    'angular-resource' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-resource")]
+    }
+	'angular-route' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-route")]
+    }
+	'angular-sanitize' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-sanitize")]
+    }
+	'angular-touch' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-touch")]
+    }
 
 	'angular-mocks' {
 		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-mocks.js"]
 	}
-	
 	'angular-scenario' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-scenario.js"], attrs: ['ng:autotest': true]
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-scenario.js"], 
+			attrs: ['ng:autotest': true]
 	}
-	
+
 	'angular-services'{
 		dependsOn 'angular'
 		defaultBundle 'angular'
 	}
-	
 	'angular-controllers'{
 		dependsOn 'angular-services'
 		defaultBundle 'angular'
 	}
-	
 	'angular-filters'{
 		dependsOn 'angular-controllers'
 	}
-	
 	'angular-widgets'{
 		dependsOn 'angular-filters'
 		defaultBundle 'angular'
