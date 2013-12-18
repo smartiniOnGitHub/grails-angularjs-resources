@@ -42,7 +42,11 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
                       all: '*/*',
                       json: ['application/json','text/json'],
                       form: 'application/x-www-form-urlencoded',
-                      multipartForm: 'multipart/form-data'
+                      multipartForm: 'multipart/form-data',
+					  jar: 'application/java-archive',
+					  'jar.pack.gz': 'application/x-java-pack200',
+					  jnlp: 'application/x-java-jnlp-file',
+                      'min.js.map': 'application/json'
                     ]
 
 // URL Mapping Cache Max Size, defaults to 5000

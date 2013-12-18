@@ -6,17 +6,20 @@ TODO
 
 - for release 1.2.5 (small improvements/cleanup):
 	- update to AngularJS 1.2.5 ... ok
-	- check if delete *.js.map files ... maybe later
 	- define new modules in resources config for new AngularJS files ... ok
 	- update requirements to Grails-2.2.x (currently 2.2.4) ... ok
 	- update dependencies to resources 1.2.1 or later ... ok
 	- update the test webapp to Grails-2.2.x (currently 2.2.4) ... ok
+	- check if delete *.js.map files ... yes, and maybe re-add them later ... ok
+	- define modules even for *.js.map files in resources configuration ... ok but do not enable it now
 	- improve tests in the test webapp for a Grails Controller but using only static html pages ...
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
 
 
 - update install info in main README.md, and test it creating a new Grails webapp from scratch (but then delete it), important ...
 - improve documentation with a detailed Tutorial, from a Grails point of view ...
+
+- verify how to deploy modules for *.js.map files only in dev or test environments (if possible) ...
 
 - add some real unit/integration tests ...
 
