@@ -12,12 +12,12 @@ TODO
 	- update the test webapp to Grails-2.2.x (currently 2.2.4) ... ok
 	- check if delete *.js.map files ... yes, and maybe re-add them later ... ok
 	- define modules even for *.js.map files in resources configuration ... ok but do not enable it now
+	- enable modules for *.js.map files in resources configuration ... no, remove related *Resource config file (it seems unnecessary)
 	- update install/usage info in main README.md in the test webapp ... ok
 	- improve tests in the test webapp for a Grails Controller but using only static html pages ... ok
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
 
 - verify how to deploy modules for *.js.map files only in dev environment (if possible) ...
-- enable modules for *.js.map files in resources configuration ...
 
 - add some real unit/integration tests ...
 
