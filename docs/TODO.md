@@ -17,6 +17,10 @@ TODO
 	- improve tests in the test webapp for a Grails Controller but using only static html pages ... ok
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
 
+
+- check how to fix the download of first *.min.js.map files, see here:
+http://grails.1312388.n4.nabble.com/Resource-plugin-can-I-bundle-js-map-files-tp4652612.html
+
 - verify how to deploy modules for *.js.map files only in dev environment (if possible) ...
 
 - add some real unit/integration tests ...
