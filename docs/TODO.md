@@ -4,35 +4,19 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.2.5 (small improvements/cleanup):
-	- update to AngularJS 1.2.5 ... ok
-	- define new modules in resources config for new AngularJS files ... ok
-	- update requirements to Grails-2.2.x (currently 2.2.4) ... ok
-	- update dependencies to resources 1.2.1 or later ... ok
-	- update the test webapp to Grails-2.2.x (currently 2.2.4) ... ok
-	- check if delete *.js.map files ... yes, and maybe re-add them later ... ok
-	- define modules even for *.js.map files in resources configuration ... ok but do not enable it now
-	- enable modules for *.js.map files in resources configuration ... no, remove related *Resource config file (it seems unnecessary)
-	- update install/usage info in main README.md in the test webapp ... ok
-	- improve tests in the test webapp for a Grails Controller but using only static html pages ... ok
+- for release 1.2.6 (small improvements/cleanup):
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
+	- check to fix the issue # 13, on download of first *.min.js.map file
 
 
-- check how to fix the download of first *.min.js.map files, see here:
-http://grails.1312388.n4.nabble.com/Resource-plugin-can-I-bundle-js-map-files-tp4652612.html
-
-- verify how to deploy modules for *.js.map files only in dev environment (if possible) ...
-
-- add some real unit/integration tests ...
-
-- improve documentation with a detailed Tutorial, from a Grails point of view ...
-
-
-- verify if move (maybe in the *NoProdResource.groovy configuration file) angular test-only js files (angular-mocks.js, angular-scenario.js) ...
-	- or verify al least if exclude those files with a dedicated flag (set up in the webapp that uses the plugin) ...
-
-- verify if add a Groovy (or Grails) Script to start a minimal Web Server for publishing static resources only, 
-  to simplify/speedup development with static resources only ...
+- future:
+	- verify how to deploy modules for *.js.map files only in dev environment (if possible) ...
+	- add some real unit/integration tests ...
+	- improve documentation with a detailed Tutorial, from a Grails point of view ...
+	- verify if move (maybe in the *NoProdResource.groovy configuration file) angular test-only js files (angular-mocks.js, angular-scenario.js) ...
+	  or verify al least if exclude those files with a dedicated flag (set up in the webapp that uses the plugin) ...
+	- verify if add a Groovy (or Grails) Script to start a minimal Web Server for publishing static resources only, 
+	  to simplify/speedup development with static resources only ...
 
 
 - etc ...
@@ -76,6 +60,18 @@ DONE
 	- add some tests in the test webapp for a Grails Controller but using only static html pages ... ok but still not fully working
 
 - reminder: re-generate documentation, and publish in my GitHUB Pages (in any release) ... ok
+
+- for release 1.2.5 (first in the 1.2.x development line):
+	- update to AngularJS 1.2.5 ... ok
+	- define new modules in resources config for new AngularJS files ... ok
+	- update requirements to Grails-2.2.x (currently 2.2.4) ... ok
+	- update dependencies to resources 1.2.1 or later ... ok
+	- update the test webapp to Grails-2.2.x (currently 2.2.4) ... ok
+	- check if delete *.js.map files ... yes, and maybe re-add them later ... ok
+	- define modules even for *.js.map files in resources configuration ... ok but do not enable it now
+	- enable modules for *.js.map files in resources configuration ... no, remove related *Resource config file (it seems unnecessary)
+	- update install/usage info in main README.md in the test webapp ... ok
+	- improve tests in the test webapp for a Grails Controller but using only static html pages ... ok
 
 
 ---------------

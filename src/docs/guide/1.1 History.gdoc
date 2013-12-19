@@ -4,6 +4,7 @@ h4. History
 ** 1.2.5 release
 *** Updated to AngularJS 1.2.5
 *** Updated to Grails-2.2.x and the Grails Resources plugin 1.2.x
+*** Improved the test webapp (with samples inside) and related docs
 *** Small updates/cleanup
 
 * December 2013
