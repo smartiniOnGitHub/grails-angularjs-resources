@@ -4,8 +4,8 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.2.6 (small improvements/cleanup):
-	- update to AngularJS-1.2.6 ... ok
+- for release 1.2.11 (small improvements/cleanup):
+	- update to AngularJS-1.2.11 ... ok
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
 	- update doc in history ...
 
