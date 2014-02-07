@@ -4,8 +4,8 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.2.11 (small improvements/cleanup):
-	- update to AngularJS-1.2.11 ... ok
+- for release 1.3.x (aligned with AngularJS-1.3.x):
+	- update to AngularJS-1.3.x ...
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
 	- update doc in history ...
 
@@ -74,6 +74,10 @@ DONE
 	- enable modules for *.js.map files in resources configuration ... no, remove related *Resource config file (it seems unnecessary)
 	- update install/usage info in main README.md in the test webapp ... ok
 	- improve tests in the test webapp for a Grails Controller but using only static html pages ... ok
+
+- for release 1.2.11 (small improvements/cleanup):
+	- update to AngularJS-1.2.11 ... ok
+	- update doc in history ... ok
 
 
 ---------------
