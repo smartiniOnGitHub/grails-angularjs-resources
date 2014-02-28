@@ -114,5 +114,6 @@ log4j = {
            'net.sf.ehcache.hibernate'
 
     // optional, add higher logging level for the given package
+	info   'grails.app.controllers', 'grails.app.services'
 	// debug 'org.grails.plugin.resource'  // attention, this generates a lot of log ...
 }

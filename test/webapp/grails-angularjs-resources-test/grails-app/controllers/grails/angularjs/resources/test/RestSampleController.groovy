@@ -18,6 +18,8 @@ class RestSampleController
 
     def index() 
 	{
+		log.info("index - params: $params")
+
 		// render(view: "index")
 		// render Product.list() as JSON
 		render sampleJSonResponse as JSON

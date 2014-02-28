@@ -5,6 +5,8 @@ class AngularSampleStaticController
 
     def index() 
 	{
+		log.info("index - params: $params")
+
 		// render(view: "index")  // ok, go to index.gsp
 		// render(view: "page.html")  // no, it search page.html.jsp
 		// redirect(uri: "/angularSampleStatic/index.html")
