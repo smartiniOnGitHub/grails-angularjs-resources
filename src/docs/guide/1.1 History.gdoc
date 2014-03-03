@@ -1,5 +1,10 @@
 h4. History
 
+* March 2014
+** 1.2.14 release
+*** Updated to AngularJS 1.2.14
+*** Updated to latest Grails Resources Plugin
+
 * February 2014
 ** 1.2.11 release
 *** Updated to AngularJS 1.2.11

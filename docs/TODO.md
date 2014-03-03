@@ -79,5 +79,11 @@ DONE
 	- update to AngularJS-1.2.11 ... ok
 	- update doc in history ... ok
 
+- for release 1.2.14 (small improvements/cleanup):
+	- update to AngularJS-1.2.14 ... ok
+	- copy minimal AngularJS files even in the static part of test webapp (to have it working without copying by hand) ... ok
+	- update doc in history ... ok
+	- generate and publish plugin doc for this release ... ok
+
 
 ---------------

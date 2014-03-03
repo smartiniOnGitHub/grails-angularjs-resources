@@ -12,9 +12,9 @@
 		// but it's better to ask static resources to the resources plugin (by default mapped to /static),
 		// so use "../static/" instead ...
 		//-->
-		<link rel="stylesheet" href="../static/css/main.css" type="text/css">
-		<link rel="stylesheet" href="../static/css/mobile.css" type="text/css">
-		<link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
+		<link rel="stylesheet" href="../static/css/mobile.css" type="text/css"/>
+		<link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon"/>
 
 		<script src="../static/js/application.js" type="text/javascript"></script>
 	</head>
@@ -72,8 +72,11 @@
 		// otherwise ask bundled scripts to Grails resources plugin (names extracted from a standard gsp page using them) ...
 		<script src="../static/bundle-angular_defer.js"></script>
 		//-->
-		<script src="../lib/angular/angular.js"></script>
-		<script src="../lib/angular/angular-route.js"></script>
+		<!--
+		// to simplify tests here, copy there some js files, but the minified version ...
+		//-->
+		<script src="../lib/angular/angular.min.js"></script>
+		<script src="../lib/angular/angular-route.min.js"></script>
 
 		<!--
 		// get application js files for AngularJS ...
