@@ -32,14 +32,12 @@ def getJsFile(String name) {
 
 modules = {
 	'angular' {
-		defaultBundle 'angular'
 		if (jqueryPlugin) {
 			dependsOn 'jquery'
 		}
-		resource id: 'angular', 
-			url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular")], 
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular")], 
 			nominify: isDevOrTestEnvironment, 
-			disposition: 'defer'
+			disposition: 'head'
 	}
 
     'angular-animate' {
@@ -81,18 +79,15 @@ modules = {
 
 	'angular-services'{
 		dependsOn 'angular'
-		defaultBundle 'angular'
 	}
 	'angular-controllers'{
 		dependsOn 'angular-services'
-		defaultBundle 'angular'
 	}
 	'angular-filters'{
 		dependsOn 'angular-controllers'
 	}
 	'angular-widgets'{
 		dependsOn 'angular-filters'
-		defaultBundle 'angular'
 	}
 
 }

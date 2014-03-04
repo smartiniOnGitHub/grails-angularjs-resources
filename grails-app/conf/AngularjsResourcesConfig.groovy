@@ -1,0 +1,1 @@
+grails.resources.adhoc.patterns = ["/images/*", "*.css", "*.js", "*.map"]
