@@ -9,15 +9,19 @@
 # .project
 *.log
 *.iws
+.idea/
+*.iml
+*.md5
+*.sha1
 # *Db.properties
 # *Db.script
 *~*
 # *~
 *.bak
+Thumbs.db
 /*.db
 /*.zip
 /plugin.xml
-/*.log
 /*DB.*
 /*.ser
 /.link_to_grails_plugins/
@@ -29,5 +33,4 @@
 /target/
 /target-eclipse/
 /temp/
-/web-app/plugins
-/web-app/WEB-INF/classes
+/web-app/WEB-INF
