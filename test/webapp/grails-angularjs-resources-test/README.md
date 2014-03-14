@@ -23,7 +23,7 @@ Currently, this plugin exposes the following AngularJS files as Grails Resources
 * angular.js as 'angular' module
 * angular-animate.js  as 'angular-animate'  module
 * angular-cookies.js  as 'angular-cookies'  module
-* angular-loader.js   as 'angular-loader'   module
+* angular-loader.js   as 'angular-loader'   module, useful for asynchronous loading of modules (use this as first)
 * angular-resource.js as 'angular-resource' module
 * angular-route.js    as 'angular-route'    module
 * angular-sanitize.js as 'angular-sanitize' module
@@ -31,23 +31,30 @@ Currently, this plugin exposes the following AngularJS files as Grails Resources
 
 and for testing:
 
-* angular-mocks.js    as 'angular-mocks'    module
-* angular-scenario.js as 'angular-scenario' module
+* angular-mocks.js    as 'angular-mocks'    module, for mocking objects
+* angular-scenario.js as 'angular-scenario' module, for end-to-end tests
+
+Note that there are even other modules defined (just for convenience) to group more modules, for example:
+
+* angular-top, with most-common AngularJS scripts
+* angular-all, with all scripts but not test-related scripts
 
 
 ## Using the plugin ##
 
-To use resource modules published by the plugin, you just need to defined dependency 
+To use resource modules published by the plugin, you just need to define dependency 
 in your ApplicationResources.groovy in the following way (sample):
 
-first add the base module, then all other optional module,
+first add the base module (published by the plugin), then (optional) other modules needed,
 and finally all application-specific JavaScript files.
+
+Example:
 
 	modules = {
 	    app {  // where 'app' is the name of my-angular-module used in pages ...
-			dependsOn 'angular',  // add base angular modules ...
-				// other angular modules, as used ...
-				'angular-resource', 'angular-route', 
+			dependsOn 'angular',  // base angular script ...
+				// other angular scripts, as needed ...
+				'angular-resource', 'angular-route'
 	        // last, add application-specific JavaScript files related to angular
 			resource url:'js/app.js'
 	        resource url:'js/services.js'

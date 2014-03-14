@@ -17,22 +17,14 @@
 
 import grails.util.Environment
 
-// def dev  = Environment.isDevelopmentMode()
-// def test = Environment.current == Environment.TEST
-// def isDevOrTestEnvironment = (dev || test)
-
 def applicationContext = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext
 def jqueryPlugin = applicationContext.pluginManager.getGrailsPlugin('jquery')
 
 def getJsFile(String name) {
-	// isDevOrTestEnvironment ? "${name}.js" : "${name}.min.js"
 	def fileName = Environment.isDevelopmentMode() ? "${name}.js" : "${name}.min.js"
-	// println "Environment.current: ${Environment.current}, Environment.isDevelopmentMode(): ${Environment.isDevelopmentMode()}"
-	// println "dev: $dev, test: $test, isDevOrTestEnvironment: $isDevOrTestEnvironment"
 	// println "name: $name, fileName: $fileName"
 	return fileName
 }
-
 
 
 modules = {
