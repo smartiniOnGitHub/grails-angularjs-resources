@@ -17,15 +17,20 @@
 
 import grails.util.Environment
 
-def dev  = Environment.isDevelopmentMode()
-def test = Environment.current == Environment.TEST
-def isDevOrTestEnvironment = (dev || test)
+// def dev  = Environment.isDevelopmentMode()
+// def test = Environment.current == Environment.TEST
+// def isDevOrTestEnvironment = (dev || test)
 
 def applicationContext = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext
 def jqueryPlugin = applicationContext.pluginManager.getGrailsPlugin('jquery')
 
 def getJsFile(String name) {
-	isDevOrTestEnvironment ? "${name}.js" : "${name}.min.js"
+	// isDevOrTestEnvironment ? "${name}.js" : "${name}.min.js"
+	def fileName = Environment.isDevelopmentMode() ? "${name}.js" : "${name}.min.js"
+	// println "Environment.current: ${Environment.current}, Environment.isDevelopmentMode(): ${Environment.isDevelopmentMode()}"
+	// println "dev: $dev, test: $test, isDevOrTestEnvironment: $isDevOrTestEnvironment"
+	// println "name: $name, fileName: $fileName"
+	return fileName
 }
 
 
@@ -36,45 +41,52 @@ modules = {
 			dependsOn 'jquery'
 		}
 		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular")], 
-			nominify: isDevOrTestEnvironment, 
-			disposition: 'head'
+			disposition: 'head', exclude:'minify'
 	}
 
     'angular-animate' {
 		dependsOn 'angular'
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-animate")]
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-animate")],
+			exclude:'minify'
     }
     'angular-cookies' {
         dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-cookies")]
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-cookies")],
+			exclude:'minify'
     }
     'angular-loader' {
-        dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-loader")]
+        // dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-loader")],
+			disposition: 'head', exclude:'minify'
     }
     'angular-resource' {
         dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-resource")]
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-resource")],
+			disposition: 'head', exclude:'minify'
     }
 	'angular-route' {
         dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-route")]
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-route")],
+			disposition: 'head', exclude:'minify'
     }
 	'angular-sanitize' {
         dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-sanitize")]
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-sanitize")],
+			exclude:'minify'
     }
 	'angular-touch' {
         dependsOn 'angular'
-        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-touch")]
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-touch")],
+			exclude:'minify'
     }
 
 	'angular-mocks' {
-		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-mocks.js"]
+		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-mocks.js"],
+			disposition: 'head'
 	}
 	'angular-scenario' {
 		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-scenario.js"], 
-			attrs: ['ng:autotest': true]
+			disposition: 'head', attrs: ['ng:autotest': true]
 	}
 
 	'angular-services'{
@@ -88,6 +100,36 @@ modules = {
 	}
 	'angular-widgets'{
 		dependsOn 'angular-filters'
+	}
+
+
+	// define additional modules, for simpler usage
+
+	'angular-cfsw'{  // application specific scripts
+		dependsOn 'angular-services'
+		dependsOn 'angular-controllers'
+		dependsOn 'angular-filters'
+		dependsOn 'angular-widgets'
+	}
+
+	'angular-top'{  // more commonly used scripts
+		dependsOn 'angular-route'
+		dependsOn 'angular-resource'
+	}
+
+	'angular-all'{  // all without test-related scripts
+		// dependsOn 'angular-loader'
+		dependsOn 'angular-top'
+		dependsOn 'angular-cookies'
+		dependsOn 'angular-sanitize'
+		dependsOn 'angular-touch'
+		dependsOn 'angular-animate'
+	}
+
+	'angular-all-with-tests'{  // all with test-related scripts
+		dependsOn 'angular-all'
+		dependsOn 'angular-mocks'
+		dependsOn 'angular-scenario'
 	}
 
 }

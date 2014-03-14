@@ -13,7 +13,48 @@ h4. Requirements
 * a Servlet container to run the Web application
 
 
+h4. Description
+This plugin adds AngularJS resources to the Grails Application.
+
+It uses new Resources Plugin to handle resources gracefully. 
+Just let your AngularJS resources (services, controllers etc.) depend on *'angular'* module and it's done. 
+Following AngularJS modules are also provided out of box: 
+angular-animate, angular-cookies, angular-loader, angular-resource, angular-route, angular-sanitize, angular-touch.
+
+There is also controller for AngularJS scenario testing. 
+Just navigate to <app>/nge2e/<scenario-module-name> to see the results. 
+The scenario module must depend on *'angular-scenario'*.
+
+The plugin serves minified version for environments other than development. 
+If jQuery plugin is installed it automatically depends on it.
+
+To simplify usage from applications, additional modules are defined:
+*'angular-top'* with most-common AngularJS scripts, *'angular-all'* with all scripts but not test-related scripts, etc.
+
+
+h4. Quick Start
+
+Add AngularJS tags in gsp/html pages (for example for ng-app app), 
+define routes and then create related fragment pages to be included by AngularJS (at client side).
+
+Optional, write AngularJS application-specific files (usually app.js, controllers, services, filters, directives, etc.) 
+or put all inline in some page.
+
+Optional, in ApplicationResources.groovy, group application-specific files (seen before) in a specific module (for example 'app-js').
+In ApplicationResources.groovy, define an application specific module (for example app) and make it dependent 
+on desired AngularJS modules published by the plugin, and maybe even from 'app-js' module just defined.
+If needed, define even an 'index' module.
+
+In gsp pages(or directly in layout pages, for simpler inclusion in all pages) use resource modules defined in the plugin or in the webapp, 
+and then use AngularJS tags as needed (pages could be even static html pages to speedup prototyping, 
+but in this case it's not-so-simple to get js files published by resources plugin in a generic, non-hardcoded way).
+
+Note that to call AngularJS from application-specific scripts (inline in page), 
+you must put them after the inclusion of AngularJS scripts, for example at the beginning of the body section.
+
+
 h4. Sample usage
 
 There is a sample/minimal test webapp (under test/webapp) with some examples on how to use the plugin, see sources.
+
 

@@ -20,9 +20,11 @@ modules = {
         resource url:'js/application.js'
     }
 
-    app {
-		dependsOn 'angular',  // add base angular modules ...
-			// add even all other angular modules defined in the plugin ...
+    /*
+	// old test
+	app {
+		dependsOn 'angular',  // base angular modules
+			// add even all other angular modules defined in the plugin
 			'angular-animate', 'angular-cookies', 'angular-loader', 
 			'angular-resource', 'angular-route', 
 			'angular-sanitize', 'angular-touch'
@@ -34,8 +36,26 @@ modules = {
         resource url:'js/filters.js'
         resource url:'js/directives.js'
     }
+	 */
 
-    index {
+    'app-js' {
+		dependsOn 'angular'  // base angular modules
+        resource url:'js/app.js'
+        resource url:'js/services.js'
+        resource url:'js/controllers.js'
+        resource url:'js/filters.js'
+        resource url:'js/directives.js'
+    }
+
+    'app' {
+		// dependsOn 'angular'  // base angular modules
+		// dependsOn 'angular-top'  // most common angular modules
+		// dependsOn 'angular-all'  // all angular modules (without test scripts)
+		dependsOn 'angular-all'  // enable this, as a sample ...
+		dependsOn 'app-js'  // application-specific angular-related scripts ...
+    }
+
+    'index' {
         // resource url:'js/app.js'
     }
 
