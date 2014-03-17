@@ -1,7 +1,7 @@
 h4. Tricks
 
 * angular not defined, in application-specific JavaScript files
-** Resources plugin put AngularJS scripts at the end of head section in HTML pages, so to call AngularJS from application-specific scripts (written directly in page, without using Resources Plugin) you must put them after the inclusion of AngularJS scripts, for example at the beginning of the body section
+** Resources plugin put AngularJS scripts at the end of head section in HTML pages, so to call AngularJS from application-specific scripts (written directly in page, without using Resources Plugin) you must put them after the inclusion of AngularJS scripts (for example at the beginning of the body section), or include it in a r:script
 
 * Module "index" missing in webapp, when trying to use angularjs.Nge2eController
 ** Remember to define an "index" module in @ApplicationResources.groovy@, needed by Resources plugin

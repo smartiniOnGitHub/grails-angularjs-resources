@@ -5,12 +5,8 @@ TODO
 ----
 
 - for release 1.2.15 (small fixes):
-	- merge fixes and do some tests ... ok
-	- check to fix the issue #13, (and #14 and related), on download of first *.min.js.map file ... ok
-	- fix remaining issues: #16 ... ok
-	- fix no minification for js files in DEV environment ... ok
 	- update to AngularJS-1.2.15 ...
-	- update doc in history ... ok
+	- update doc in history ...
 	- generate and publish plugin doc for this release ...
 
 
@@ -97,6 +93,14 @@ DONE
 	- update to AngularJS-1.2.14 ... ok
 	- copy minimal AngularJS files even in the static part of test webapp (to have it working without copying by hand) ... ok
 	- update doc in history ... ok
+	- generate and publish plugin doc for this release ... ok
+
+- for release 1.2.14.1 (maintenance over 1.2.14):
+	- small improvements over 1.2.14 release, and small updates/clarifications in docs and in the test webapp ... ok
+	- merge fixes and do some tests ... ok
+	- check to fix the issue #13, (and #14 and related), on download of first *.min.js.map file ... ok
+	- fix remaining issues: #16 ... ok
+	- fix no minification for js files in DEV environment ... ok
 	- generate and publish plugin doc for this release ... ok
 
 

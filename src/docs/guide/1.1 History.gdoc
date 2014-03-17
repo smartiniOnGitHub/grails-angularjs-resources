@@ -1,9 +1,11 @@
 h4. History
 
 * March 2014
-** 1.2.15 release
-*** Updated to AngularJS 1.2.15
-*** Updated modules, clarified docs and samples
+** 1.2.14.1 release
+*** Maintenance over 1.2.14 plugin release
+*** Closed all existing issues
+*** Fixed no-minification of AngularJS js files in DEV environment (but only there)
+*** Updated modules, clarified docs, samples, and the test webapp
 
 * March 2014
 ** 1.2.14 release

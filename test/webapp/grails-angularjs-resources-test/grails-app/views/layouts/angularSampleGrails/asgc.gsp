@@ -21,8 +21,14 @@
 		<r:layoutResources />
 	</head>
 	<body>
+		<!-- 
+			Sample reference to AngularJS objects from inline scripts.
+			Otherwise in gsp pages, use the resources script tag (r_script), 
+			and optionally force it at the end of head specifying disposition="head".
+			Otherwise (manual way, as seen here) use directly the HTML script tag.
+		//-->
 		<script>
-		<!-- Sample reference to AngularJS objects from inline scripts //-->
+		// Sample reference to AngularJS objects from inline scripts
 		var app = angular.module('app', ['app']);
 		if (window.console) {
 			// console.log('Angular instance: ' + app); // ok

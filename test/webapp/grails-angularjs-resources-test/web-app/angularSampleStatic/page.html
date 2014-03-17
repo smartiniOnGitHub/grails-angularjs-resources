@@ -97,5 +97,16 @@
 		<script src="../js/controllers.js"></script>
 		<script src="../js/filters.js"></script>
 		<script src="../js/directives.js"></script>
+
+		<script>
+		// Sample reference to AngularJS objects from inline scripts
+		// Remember to put it after the inclusion of related scripts ...
+		var app = angular.module('app', ['app']);
+		if (window.console) {
+			// console.log('Angular instance: ' + app); // ok
+			console.log('Angular instance: ', app);  // better
+		}
+		</script>
+
 	</body>
 </html>

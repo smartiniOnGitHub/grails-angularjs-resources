@@ -50,7 +50,8 @@ and then use AngularJS tags as needed (pages could be even static html pages to 
 but in this case it's not-so-simple to get js files published by resources plugin in a generic, non-hardcoded way).
 
 Note that to call AngularJS from application-specific scripts (inline in page), 
-you must put them after the inclusion of AngularJS scripts, for example at the beginning of the body section.
+you must put them after the inclusion of AngularJS scripts (for example at the beginning of the body section), 
+or include it in a r:script tag and optionally force it at the end of head specifying disposition="head".
 
 
 h4. Sample usage
