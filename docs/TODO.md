@@ -4,18 +4,13 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.2.15 (small fixes):
-	- update to AngularJS-1.2.15 ...
-	- update doc in history ...
-	- generate and publish plugin doc for this release ...
-
-
 - for release 1.3.x (aligned with AngularJS-1.3.x):
 	- verify if restore the module angular-autobind (and related angular-manual.js file ...
 	- verify if add a config key for disabling the minification of JavaScript files (but only for DEV environment) ...
 	- update to AngularJS-1.3.x ...
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
 	- update doc in history ...
+	- generate and publish plugin doc for this release ...
 
 
 - future:
@@ -102,6 +97,13 @@ DONE
 	- fix remaining issues: #16 ... ok
 	- fix no minification for js files in DEV environment ... ok
 	- generate and publish plugin doc for this release ... ok
+	- note that here angularJSVersion is '1.2.14' (and not '1.2.14.1', my mistake) ...ok
+
+- for release 1.2.15 (small fixes):
+	- update to AngularJS-1.2.15 ... ok
+	- update doc in history ... ok
+	- generate and publish plugin doc for this release ... ok
+	- test the plugin in the test webapp ... ok
 
 
 ---------------
