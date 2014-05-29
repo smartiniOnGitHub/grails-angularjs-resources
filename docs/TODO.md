@@ -5,6 +5,7 @@ TODO
 ----
 
 - for release 1.3.x (aligned with AngularJS-1.3.x):
+	- add e new test webapp but created with latest stable Grails-2.4.x: grails-angularjs-resources-test24 ...
 	- verify if restore the module angular-autobind (and related angular-manual.js file ...
 	- verify if add a config key for disabling the minification of JavaScript files (but only for DEV environment) ...
 	- update to AngularJS-1.3.x ...
@@ -104,6 +105,9 @@ DONE
 	- update doc in history ... ok
 	- generate and publish plugin doc for this release ... ok
 	- test the plugin in the test webapp ... ok
+
+- for release 1.2.16 (small fixes):
+	- do the same steps of previous releases ... ok
 
 
 ---------------

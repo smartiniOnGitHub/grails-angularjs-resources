@@ -50,12 +50,12 @@ grails.project.dependency.resolution = {
 
     plugins {
         // compile "org.grails.plugins:spring-security-core:1.2.7.3"
-		// compile "org.grails.plugins:mongodb:2.0.0"
+		// compile "org.grails.plugins:mongodb:2.0.1"
 
         runtime ":hibernate:$grailsVersion"
 
-        runtime ":jquery:1.10.2.2"
-        runtime ":resources:1.2.7"
+        runtime ":jquery:1.11.1"
+        runtime ":resources:1.2.8"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0"
