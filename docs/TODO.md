@@ -109,5 +109,8 @@ DONE
 - for release 1.2.16 (small fixes):
 	- do the same steps of previous releases ... ok
 
+- for release 1.2.17 (small fixes):
+	- do the same steps of previous releases ... ok
+
 
 ---------------
