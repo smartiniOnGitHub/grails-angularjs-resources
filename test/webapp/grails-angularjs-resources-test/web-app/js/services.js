@@ -5,9 +5,9 @@
 // Sample value service
 var servicesModule = angular.module('app.services', []);
 
-servicesModule
-	.value('version', '1.0')
-	.value('webapp_context_name', 'grails-angularjs-resources-test')  // manual set webapp context name here, as a sample
+servicesModule.value('version', '1.0');
+servicesModule.value('webapp_context_name', 'grails-angularjs-resources-test');  // manual set webapp context name here, as a sample
+
 /*
 // TODO: make it work (later) ...
 	.value('webapp_context_name', 'grails-angularjs-resources-test')  // manual set webapp context name here, as a sample

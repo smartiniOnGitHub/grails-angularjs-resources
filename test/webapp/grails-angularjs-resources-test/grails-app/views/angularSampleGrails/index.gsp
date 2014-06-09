@@ -34,7 +34,7 @@
 			<div ng-view>
 			</div>
 			<hr/>
-		<div>
+		</div>
 		<br/>
 
 
