@@ -87,6 +87,11 @@ img {
 	border: 0;
 }
 
+hr {
+	margin: 0.5em;
+}
+
+
 /* GENERAL */
 
 #grailsLogo a {
@@ -131,6 +136,12 @@ img {
 	top: 0;
 	text-indent: -9999px;
 }
+
+.template_show {
+	border-style:dashed;
+	border-color:red;
+}
+
 
 /* NAVIGATION MENU */
 

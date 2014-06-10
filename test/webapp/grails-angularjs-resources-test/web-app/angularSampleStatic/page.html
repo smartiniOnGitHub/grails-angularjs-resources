@@ -33,6 +33,19 @@
 		<div id="grailsLogo">
 			<a href="Home"><img src="../static/images/grails_logo.png" alt="Home"/></a>
 		</div>
+		<div>
+			Hello static HTML page
+		</div>
+		<br/>
+
+		<div>
+			<p>
+				This is a static page (html, under web-app), without a Grails Layout.
+				<br/>
+			</p>
+		</div>
+		<hr/>
+		<br/>
 
 		<!-- Content -->
 		<div>
@@ -50,18 +63,9 @@
 			<br/>
 
 			<!-- // change content inside, from AngularJS Templates ... -->
-			<div ng-view>
+			<div class="template_show" ng-view>
 			</div>
 			<hr/>
-		</div>
-		<br/>
-
-
-		<div>
-			<p>
-				This is a static page (html, under web-app), without a Grails Layout.
-				<br/>
-			</p>
 		</div>
 		<br/>
 		<!-- /Content -->
@@ -71,6 +75,17 @@
 				v<span app-version></span>
 			</div>
 		</div>
+
+		<script>
+		// Sample reference to AngularJS objects from inline scripts
+		// Remember to put it after the inclusion of related scripts ...
+		//   - script moved here from the bottom of the page, or something could not work ...
+		var app = angular.module('app', ['app']);
+		if (window.console) {
+			// console.log('Angular instance: ' + app); // ok
+			console.log('Angular instance: ', app);  // better
+		}
+		</script>
 
 		<!--
 		// get application js files for AngularJS ...
@@ -89,15 +104,6 @@
 		//-->
 		<script src="../static/bundle-bundle_app-js_defer.js"></script>
 
-		<script>
-		// Sample reference to AngularJS objects from inline scripts
-		// Remember to put it after the inclusion of related scripts ...
-		var app = angular.module('app', ['app']);
-		if (window.console) {
-			// console.log('Angular instance: ' + app); // ok
-			console.log('Angular instance: ', app);  // better
-		}
-		</script>
-
+		<!-- do not add other scripts after ... important !! //-->
 	</body>
 </html>

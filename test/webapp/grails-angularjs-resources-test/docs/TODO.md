@@ -5,11 +5,9 @@ grails-angularjs-resources-test - TODO
 TODO
 ----
 
-- fix the (client-side) include in the static page, but as a secondary priority ...
-- check how to debug routing ...
-
 
 - future:
+	- check if/how to debug routing, for example to show errors in case of missing template/partial ...
 	- add content like in AngularJS-phonecat ...
 	- refactor webapp AngularJS-related files to use a structure like that of Grails sources ...
 	- use even from run-war ... ok, but in Tomcat logs there are some warnings ... verify it
@@ -53,6 +51,9 @@ ERROR resource.ResourceMeta  - Resource not found: /plugins/angularjs-resources-
 	- some json data ... wip (ok for a first version, with only one object, but without input parameters, not based on domain object, etc) ... maybe later
 
 - use resources of the angularjs-resources plugin ... it's not-so-simple because in the url there is the plugin name and version ... maybe later
+
+- fix the (client-side) include in the static page ... resolved: keep AngularJS related application scripts as last (at the bottom of the page) ... ok
+- put in evidence (via a css style) included template ... ok
 
 
 ---------------

@@ -13,6 +13,19 @@
 		</div>
 		<br/>
 
+		<div>
+		<p>
+			This is a Grails page (gsp), using a Grails Layout.
+			<br/>
+			Depending on the content value in this page, the layout used could be the usual "main" (general),
+			or a layout defined for this controller (for example "asgc").
+			Or define a default one for all the webapp (by default in layouts/application.gsp).
+		</p>
+		</div>
+		<hr/>
+		<br/>
+
+
 		<!-- // unnecessary here because ng-app is already set for the full html page (in the layout) ...
 		<div ng-app="app">
 		//-->
@@ -31,21 +44,9 @@
 			<br/>
 
 			<!-- // change content inside, from AngularJS Templates ... -->
-			<div ng-view>
+			<div class="template_show" ng-view>
 			</div>
 			<hr/>
-		</div>
-		<br/>
-
-
-		<div>
-		<p>
-			This is a Grails page (gsp), using a Grails Layout.
-			<br/>
-			Depending on the content value in this page, the layout used could be the usual "main" (general),
-			or a layout defined for this controller (for example "asgc").
-			Or define a default one for all the webapp (by default in layouts/application.gsp).
-		</p>
 		</div>
 		<br/>
 
