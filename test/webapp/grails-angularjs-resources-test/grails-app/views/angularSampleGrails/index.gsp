@@ -44,7 +44,14 @@
 			<br/>
 
 			<!-- // change content inside, from AngularJS Templates ... -->
-			<div class="template_show" ng-view>
+			<div 
+		<g:if env="development">  <%-- show it only in dev environment, as a sample --%>
+				class="template_show" 
+		</g:if>
+		<g:else>
+				class="" 
+		</g:else>
+				ng-view>
 			</div>
 			<hr/>
 		</div>
