@@ -3,6 +3,9 @@ grails-angularjs-resources - TODO
 
 TODO
 ----
+- for release 1.2.18 (small fixes):
+	- do the same steps of previous releases ...
+	- remove references to old Grails *Holder classes (no more present in Grails-2.4.x), and use grails.util.Holders instead ...
 
 - for release 1.3.x (aligned with AngularJS-1.3.x):
 	- add e new test webapp but created with latest stable Grails-2.4.x: grails-angularjs-resources-test24 ...
