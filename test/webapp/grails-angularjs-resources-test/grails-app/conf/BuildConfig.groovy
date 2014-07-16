@@ -44,12 +44,12 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        // runtime 'mysql:mysql-connector-java:5.1.29'
-        // runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
+        // runtime 'mysql:mysql-connector-java:5.1.31'
+        // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
     }
 
     plugins {
-        // compile "org.grails.plugins:spring-security-core:1.2.7.3"
+        // compile "org.grails.plugins:spring-security-core:1.2.7.4"
 		// compile "org.grails.plugins:mongodb:2.0.1"
 
         runtime ":hibernate:$grailsVersion"
