@@ -20,7 +20,7 @@ grails.project.work.dir = "target"
 grails.project.source.level = 1.6
 grails.project.target.level = 1.6
 
-def angularJSVersion = '1.2.17'
+def angularJSVersion = '1.2.20'
 
 grails.project.dependency.resolution = {
 

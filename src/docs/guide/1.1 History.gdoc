@@ -1,5 +1,10 @@
 h4. History
 
+* July 2014
+** 1.2.20 release
+*** Updated to AngularJS 1.2.20
+*** Fix compatibility with Grails-2.4
+
 * June 2014
 ** 1.2.17 release
 *** Updated to AngularJS 1.2.17
