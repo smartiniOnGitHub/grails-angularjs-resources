@@ -6,7 +6,9 @@ TODO
 - for release 1.2.20 (small fixes and compatibility with Grails-2.4):
 	- update AngularJS ... ok
 	- create a (another) test webapp with Grails-2.4.2 and configure it for testing the plugin in inline mode (as in the other) ... ok
-	- remove references to old Grails *Holder classes (no more present in Grails-2.4.x), and use grails.util.Holders instead ...
+	- remove references to old Grails *Holder classes (no more present in Grails-2.4.x), and use grails.util.Holders instead ... ok
+	- merge/update changes from the existing (older) test webapp into the new one (based on Grails-2.4.x)... ok
+	- test-webapp24: remove static files outside assets folders (if/where possible) ...
 	- do the same steps of previous releases ...
 
 - for release 1.3.x (aligned with AngularJS-1.3.x):

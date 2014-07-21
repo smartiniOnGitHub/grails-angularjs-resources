@@ -1,0 +1,109 @@
+<!doctype html>
+<html ng-app="app">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="layout" content="main"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="pageId" content="angularSampleStatic/page.html"/>
+		<title>angularSampleStatic, static HTML page, under web-app</title>
+		<!-- 
+		// good uri: "../"
+		// but it's better to ask static resources to the resources plugin (by default mapped to /static),
+		// so use "../static/" instead ...
+		//-->
+		<link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
+		<link rel="stylesheet" href="../static/css/mobile.css" type="text/css"/>
+		<link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon"/>
+
+		<script src="../static/js/application.js"></script>
+
+		<!--
+		// get AngularJS files from a local copy (not using the plugin that this webapp must test) ...
+		// of course this is not a recommended approach here ...
+		// note that these files are not committed, so you have to copy (by hand) in the referenced folder ...
+		// otherwise get them directly from Google CDN ...
+		//
+		// to simplify tests here, copy there some js files, but the minified version ...
+		//-->
+		<script src="../lib/angular/angular.min.js"></script>
+		<script src="../lib/angular/angular-route.min.js"></script>
+	</head>
+	<body>
+		<div id="grailsLogo">
+			<a href="Home"><img src="../static/images/grails_logo.png" alt="Home"/></a>
+		</div>
+		<div>
+			Hello static HTML page
+		</div>
+		<br/>
+
+		<div>
+			<p>
+				This is a static page (html, under web-app), without a Grails Layout.
+				<br/>
+			</p>
+		</div>
+		<hr/>
+		<br/>
+
+		<!-- Content -->
+		<div>
+			<h3>AngularJS, Data Binding sample</h3>
+			<input type="text" ng-model="data.message" placeholder="Type something inside">
+			<h1>{{data.message + " world"}} </h1>
+			<br/>
+			<hr/>
+
+			<h3>AngularJS, Client Templates sample</h3>
+			<ul>
+				<li><a href="#/view1">view1</a></li>
+				<li><a href="#/view2">view2</a></li>
+			</ul>
+			<br/>
+
+			<!-- // change content inside, from AngularJS Templates ... -->
+			<div class="template_show" ng-view>
+			</div>
+			<hr/>
+		</div>
+		<br/>
+		<!-- /Content -->
+
+		<div class="footer">
+			<div>AngularJS, Variable binding samples: 
+				v<span app-version></span>
+			</div>
+		</div>
+
+		<script>
+		// Sample reference to AngularJS objects from inline scripts
+		// Remember to put it after the inclusion of related scripts ...
+		//   - script moved here from the bottom of the page, or something could not work ...
+		var app = angular.module('app', ['app']);
+		if (window.console) {
+			// console.log('Angular instance: ' + app); // ok
+			console.log('Angular instance: ', app);  // better
+		}
+		</script>
+
+		<!--
+		// get application js files for AngularJS ...
+		// of course this is not a recommended approach here ...
+		<script src="../js/app.js"></script>
+		<script src="../js/services.js"></script>
+		<script src="../js/controllers.js"></script>
+		<script src="../js/filters.js"></script>
+		<script src="../js/directives.js"></script>
+		//
+		// otherwise ask bundled scripts to Grails resources plugin (names extracted from a standard gsp page using them) ...
+		// but note that currently this is not working here ...
+		<script src="../static/bundle-bundle_app-js_defer.js"></script>
+		//
+		// use the bundled (by Grails Resources Plugin) version ...
+		//-->
+		<script src="../static/bundle-bundle_app-js_defer.js"></script>
+
+		<!-- do not add other scripts after ... important !! //-->
+	</body>
+</html>

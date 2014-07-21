@@ -117,6 +117,19 @@
 					</g:each>
 				</ul>
 			</div>
+
+			<div id="static-pages-list" role="navigation">
+				<h2>Sample Static Pages:</h2>
+				<ul>
+					<li class="static-page">
+						<a href="angularSampleStatic/?page=test-angular">
+							Static Controller with page as argument (sample)
+						</a>
+					</li>
+				</ul>
+			</div>
+			<br/><br/>
+
 		</div>
 	</body>
 </html>
