@@ -16,7 +16,6 @@
  */
 
 grails.project.work.dir = "target"
-// grails.project.docs.output.dir = 'docs/manual'
 grails.project.source.level = 1.6
 grails.project.target.level = 1.6
 
@@ -29,6 +28,7 @@ grails.project.dependency.resolution = {
 
     repositories {
         grailsCentral()
+		mavenCentral()
     }
 
     dependencies {
@@ -39,7 +39,10 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        runtime ':resources:1.2.8'
+        runtime ':resources:1.2.8', {
+            export = false
+        }
+
     }
 }
 

@@ -3,16 +3,9 @@ grails-angularjs-resources - TODO
 
 TODO
 ----
-- for release 1.2.20 (small fixes and compatibility with Grails-2.4):
-	- update AngularJS ... ok
-	- create a (another) test webapp with Grails-2.4.2 and configure it for testing the plugin in inline mode (as in the other) ... ok
-	- remove references to old Grails *Holder classes (no more present in Grails-2.4.x), and use grails.util.Holders instead ... ok
-	- merge/update changes from the existing (older) test webapp into the new one (based on Grails-2.4.x)... ok
-	- test-webapp24: remove static files outside assets folders (if/where possible) ...
-	- do the same steps of previous releases ...
-
 - for release 1.3.x (aligned with AngularJS-1.3.x):
-	- add e new test webapp but created with latest stable Grails-2.4.x: grails-angularjs-resources-test24 ...
+	- test-webapp24: under the web-app folder, remove static files outside assets folders (if/where possible) ... no, it's already ok, see todo of test webapp
+	- test-webapp24: add an additional page payout that doesn't use the resources plugin, and use from a new Grails controller ... see later todo of test webapp
 	- verify if restore the module angular-autobind (and related angular-manual.js file ...
 	- verify if add a config key for disabling the minification of JavaScript files (but only for DEV environment) ...
 	- update to AngularJS-1.3.x ...
@@ -117,6 +110,13 @@ DONE
 	- do the same steps of previous releases ... ok
 
 - for release 1.2.17 (small fixes):
+	- do the same steps of previous releases ... ok
+
+- for release 1.2.20 (small fixes and compatibility with Grails-2.4):
+	- update AngularJS ... ok
+	- create a (another) test webapp with Grails-2.4.2 and configure it for testing the plugin in inline mode (as in the other) ... ok
+	- remove references to old Grails *Holder classes (no more present in Grails-2.4.x), and use grails.util.Holders instead ... ok
+	- merge/update changes from the existing (older) test webapp into the new one (based on Grails-2.4.x)... ok
 	- do the same steps of previous releases ... ok
 
 
