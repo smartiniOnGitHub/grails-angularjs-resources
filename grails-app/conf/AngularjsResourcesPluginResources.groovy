@@ -16,8 +16,9 @@
  */
 
 import grails.util.Environment
+import grails.util.Holders
 
-def applicationContext = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext
+def applicationContext = Holders.grailsApplication.mainContext
 def jqueryPlugin = applicationContext.pluginManager.getGrailsPlugin('jquery')
 
 def getJsFile(String name) {
