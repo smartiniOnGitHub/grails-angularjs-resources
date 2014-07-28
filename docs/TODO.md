@@ -3,6 +3,13 @@ grails-angularjs-resources - TODO
 
 TODO
 ----
+- for release 1.2.21 (small fixes):
+	- update AngularJS ...
+	- check if add Angular-Hint (but only in DEV environment) ...
+		https://github.com/angular/angular-hint
+		- at least in test webapps ...
+	- do the same steps of previous releases ...
+
 - for release 1.3.x (aligned with AngularJS-1.3.x):
 	- test-webapp24: under the web-app folder, remove static files outside assets folders (if/where possible) ... no, it's already ok, see todo of test webapp
 	- test-webapp24: add an additional page payout that doesn't use the resources plugin, and use from a new Grails controller ... see later todo of test webapp
