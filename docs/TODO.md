@@ -3,13 +3,6 @@ grails-angularjs-resources - TODO
 
 TODO
 ----
-- for release 1.2.21 (small fixes):
-	- update AngularJS ... ok
-	- check if add Angular-Hint (but only in DEV environment) ... maybe later
-		https://github.com/angular/angular-hint
-		- at least in test webapps ...
-	- do the same steps of previous releases ...
-
 - for release 1.3.x (aligned with AngularJS-1.3.x):
 	- test-webapp24: under the web-app folder, remove static files outside assets folders (if/where possible) ... no, it's already ok, see todo of test webapp
 	- test-webapp24: add an additional page payout that doesn't use the resources plugin, and use from a new Grails controller ... see later todo of test webapp
@@ -23,8 +16,12 @@ TODO
 
 - future:
 	- use bower (from Node.js) to handle dependencies to static resources (where possible) ...
+	- check if add Angular-Hint (but only in DEV environment) ... ok, but maybe later (wait for a release) ...
+		https://github.com/angular/angular-hint
+		- at least in test webapps ... yes, start to use here ...
 	- migrate from Resources Plugin to Asset-Pipeline Plugin (default in Grails-2.4.x) ... no, it's better to create another (dedicated) plugin
 		- note that there is already another Plugin for AngularJS and Assets ... ok, let's see later what to do
+		- otherwise try to make both work together ...
 	- verify how to deploy modules for *.js.map files only in dev environment (if possible) ...
 	- add some real unit/integration tests ...
 	- improve documentation with a detailed Tutorial, from a Grails point of view ...
@@ -124,6 +121,10 @@ DONE
 	- create a (another) test webapp with Grails-2.4.2 and configure it for testing the plugin in inline mode (as in the other) ... ok
 	- remove references to old Grails *Holder classes (no more present in Grails-2.4.x), and use grails.util.Holders instead ... ok
 	- merge/update changes from the existing (older) test webapp into the new one (based on Grails-2.4.x)... ok
+	- do the same steps of previous releases ... ok
+
+- for release 1.2.21 (small fixes):
+	- update AngularJS ... ok
 	- do the same steps of previous releases ... ok
 
 
