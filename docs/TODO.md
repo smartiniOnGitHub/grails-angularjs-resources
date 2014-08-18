@@ -127,5 +127,9 @@ DONE
 	- update AngularJS ... ok
 	- do the same steps of previous releases ... ok
 
+- for release 1.2.22 (small fixes):
+	- update AngularJS ... ok
+	- do the same steps of previous releases ... ok
+
 
 ---------------
