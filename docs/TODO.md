@@ -4,6 +4,7 @@ grails-angularjs-resources - TODO
 TODO
 ----
 - for release 1.3.x (aligned with AngularJS-1.3.x):
+	- check if make a dedicated branch (at least for 1.2.x maintenance) ...
 	- test-webapp24: under the web-app folder, remove static files outside assets folders (if/where possible) ... no, it's already ok, see todo of test webapp
 	- test-webapp24: add an additional page payout that doesn't use the resources plugin, and use from a new Grails controller ... see later todo of test webapp
 	- verify if restore the module angular-autobind (and related angular-manual.js file ...
@@ -131,5 +132,8 @@ DONE
 	- update AngularJS ... ok
 	- do the same steps of previous releases ... ok
 
+- for release 1.2.23 (small fixes):
+	- update AngularJS ... ok
+	- do the same steps of previous releases ... ok
 
 ---------------
