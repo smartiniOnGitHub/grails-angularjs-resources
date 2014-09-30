@@ -136,4 +136,8 @@ DONE
 	- update AngularJS ... ok
 	- do the same steps of previous releases ... ok
 
+- for release 1.2.25 (update dependencies):
+	- update AngularJS ... ok
+	- do the same steps of previous releases ... ok
+
 ---------------
