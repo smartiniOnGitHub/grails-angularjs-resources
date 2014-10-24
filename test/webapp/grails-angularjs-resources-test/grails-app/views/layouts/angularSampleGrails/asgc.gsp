@@ -30,9 +30,10 @@
 		<script>
 		// Sample reference to AngularJS objects from inline scripts
 		var app = angular.module('app', ['app']);
+		var angularVersion = angular.version.full;
 		if (window.console) {
-			// console.log('Angular instance: ' + app); // ok
-			console.log('Angular instance: ', app);  // better
+			// console.log('Angular instance: ', app);
+			console.log('Angular Version: ', angularVersion);
 		}
 		</script>
 

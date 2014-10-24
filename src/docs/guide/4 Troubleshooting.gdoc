@@ -13,4 +13,7 @@ h4. Workarounds
 * Running test-app gives: ERROR resource.ResourceMeta  - Resource not found: ... on some angularjs js files
 ** All it's good the same, those files are not required in test phase (at least now)
 
+* Resources Plugin with problems when jQuery is enabled
+** Up to now, the latest version fully working of the Resources Plugin is 1.2.8
+
 

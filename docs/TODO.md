@@ -3,19 +3,16 @@ grails-angularjs-resources - TODO
 
 TODO
 ----
+
+- for release 1.2.26.1 (small fixes): unreleased because since resources 1.2.9 (up to the last 1.2.13) things aren't working ...
+
 - for release 1.3.x (aligned with AngularJS-1.3.x):
-	- create a maintenance branch for plugin sources for AngularJS-1.2.x, and use master for 1.3.x ... ok
-	- test-webapp24: under the web-app folder, remove static files outside assets folders (if/where possible) ... no, it's already ok, see todo of test webapp
-	- test-webapp24: add an additional page payout that doesn't use the resources plugin, and use from a new Grails controller ... see later todo of test webapp
-	- update to AngularJS-1.3.x ... ok
-	- define additional modules (for new AngularJS resources), and delete old ones ...
-	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http ...
-	- update doc in history with updated/new modules, etc ...
-	- generate and publish plugin doc for this release ...
+	- use the new angular syntax as for Controllers (and remove $scope, etc) as a sample for new best practices ...
+	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http (or at least from a static json file) ...
+	- make it compatible (consumable) even with the Asset-Pipeline Plugin, and create another test webapp (with Grails 2-4.x) ...
 
 
 - future:
-	- make it compatible (consumable) even with the Asset-Pipeline Plugin, and create another test webapp (with Grails 2-4.x) ...
 	- verify if restore the module angular-autobind (and related angular-manual.js file ...
 	- verify if add a config key for disabling the minification of JavaScript files (but only for DEV environment) ...
 	- use bower (from Node.js) to handle dependencies to static resources (where possible) ...
@@ -134,9 +131,20 @@ DONE
 - for release 1.2.23 (small fixes) ... ok
 - for release 1.2.25 (update dependencies) ... ok
 - for release 1.2.26 (update dependencies) ... ok
-- for release 1.2.26.1 (small fixes):
+- for release 1.2.26.1 (small fixes): unreleased because since resources 1.2.9 (up to the last 1.2.13) things aren't working ...
 	- create a maintenance branch for plugin sources for AngularJS-1.2.x, and use master for 1.3.x ... ok
 	- update resources plugin to latest stable (last working was 1.2.8) ... ok
 	- note that it seems more a problem os Resources Plugin, or JQuery Plugin ... ok
+
+- for release 1.3.0 (aligned with AngularJS-1.3.0):
+	- create a maintenance branch for plugin sources for AngularJS-1.2.x, and use master for 1.3.x ... ok
+	- test-webapp24: under the web-app folder, remove static files outside assets folders (if/where possible) ... no, it's already ok, see todo of test webapp
+	- test-webapp24: add an additional page payout that doesn't use the resources plugin, and use from a new Grails controller ... see later todo of test webapp
+	- update to AngularJS-1.3.0 (even minimal files under all test webapps, just for convenience) ... ok
+	- define additional modules (for new AngularJS resources), and delete old ones (if any) ... ok
+	- print angular version in console (not in pages for now), using angular.version JavaScript method ... ok
+	- update doc in history with updated/new modules, etc ... ok
+	- generate and publish plugin doc for this release ... ok
+
 
 ---------------

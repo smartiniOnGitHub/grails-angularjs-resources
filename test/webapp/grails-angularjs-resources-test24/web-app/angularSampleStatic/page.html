@@ -81,9 +81,10 @@
 		// Remember to put it after the inclusion of related scripts ...
 		//   - script moved here from the bottom of the page, or something could not work ...
 		var app = angular.module('app', ['app']);
+		var angularVersion = angular.version.full;
 		if (window.console) {
-			// console.log('Angular instance: ' + app); // ok
-			console.log('Angular instance: ', app);  // better
+			// console.log('Angular instance: ', app);
+			console.log('Angular Version: ', angularVersion);
 		}
 		</script>
 

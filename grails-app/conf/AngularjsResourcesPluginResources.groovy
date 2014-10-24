@@ -72,6 +72,16 @@ modules = {
         resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-touch")],
 			exclude:'minify'
     }
+	'angular-aria' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-aria")],
+			disposition: 'head', exclude:'minify'
+    }
+	'angular-messages' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-messages")],
+			disposition: 'head', exclude:'minify'
+    }
 
 	'angular-mocks' {
 		resource url:[plugin: 'angularjs-resources', dir:'js/angular-tests', file:"angular-mocks.js"],
@@ -117,6 +127,8 @@ modules = {
 		dependsOn 'angular-sanitize'
 		dependsOn 'angular-touch'
 		dependsOn 'angular-animate'
+		dependsOn 'angular-aria'
+		dependsOn 'angular-messages'
 	}
 
 	'angular-all-with-tests'{  // all with test-related scripts
