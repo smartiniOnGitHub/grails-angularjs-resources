@@ -33,4 +33,4 @@ Thumbs.db
 /target/
 /target-eclipse/
 /temp/
-/web-app/WEB-INF
+/web-app/WEB-INF/classes

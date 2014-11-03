@@ -29,11 +29,13 @@ class RestSampleController
 		// render sampleDataResponse as JSON
 		// more generic
 		return withFormat {
-			// html { render "<p>Hello from $controllerName.$actionName</p>" }
-			// js   { render "alert('Hello from $controllerName.$actionName')" }
 			json { render sampleDataResponse as JSON }
 			xml  { render sampleDataResponse as XML  }
-		} ?: response.sendError(response.SC_UNSUPPORTED_MEDIA_TYPE)
+			html { render "<p>Hello from $controllerName.$actionName</p>" }
+			js   { render "alert('Hello from $controllerName.$actionName')" }
+			// '*'  { render status: NO_CONTENT } 
+			// '*'  { render status: response.SC_UNSUPPORTED_MEDIA_TYPE } 
+		}
 	}
 
 }

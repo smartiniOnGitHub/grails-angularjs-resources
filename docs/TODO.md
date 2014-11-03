@@ -7,8 +7,8 @@ TODO
 - for release 1.2.26.1 (small fixes): unreleased because since resources 1.2.9 (up to the last 1.2.13) things aren't working ...
 
 - for release 1.3.x (aligned with AngularJS-1.3.x):
-	- test webapps: update RestSampleController to be more generic, and handle more output formats (json, xml) using withFormat ... ok
 	- use the new angular syntax as for Controllers (and remove $scope, etc) as a sample for new best practices ...
+	- check if disabling asset-pipeline plugin (and related tags in layouts/gsp pages) even latest resources plugin works good (1.2.9 and higher) ...
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http (or at least from a static json file) ...
 	- make it compatible (consumable) even with the Asset-Pipeline Plugin, and create another test webapp (with Grails 2-4.x) ...
 
@@ -146,6 +146,10 @@ DONE
 	- print angular version in console (not in pages for now), using angular.version JavaScript method ... ok
 	- update doc in history with updated/new modules, etc ... ok
 	- generate and publish plugin doc for this release ... ok
+
+- for release 1.3.1 (update dependencies) ... ok
+	- test webapps: update RestSampleController to be more generic, and handle more output formats (json, xml) using withFormat ... ok
+	- update test webapp (for Grails 2.4.x) to latest stable Grails 2.4.4 ... ok
 
 
 ---------------
