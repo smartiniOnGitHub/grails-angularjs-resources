@@ -151,5 +151,7 @@ DONE
 	- test webapps: update RestSampleController to be more generic, and handle more output formats (json, xml) using withFormat ... ok
 	- update test webapp (for Grails 2.4.x) to latest stable Grails 2.4.4 ... ok
 
+- for release 1.3.2 (update dependencies) ... ok
+
 
 ---------------
