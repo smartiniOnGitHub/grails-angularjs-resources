@@ -135,7 +135,10 @@ DONE
 - for release 1.2.25 (update dependencies) ... ok
 - for release 1.2.26 (update dependencies) ... ok
 - for release 1.2.26.1 (small fixes):
-	- update resources plugin to latest stable ... ok
+	- update resources plugin to latest stable (1.2.13) ... ok
 	- create a maintenance branch for plugin sources for AngularJS-1.2.x, and use master for 1.3.x ... ok
+	- note: this has never been released !! ... ok
+
+- for release 1.2.27 (update dependencies, and revert to an Resources plugin release 1.2.8) ... ok
 
 ---------------
