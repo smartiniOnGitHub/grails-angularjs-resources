@@ -4,8 +4,6 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.2.26.1 (small fixes): unreleased because since resources 1.2.9 (up to the last 1.2.13) things aren't working ...
-
 - for release 1.3.x (aligned with AngularJS-1.3.x):
 	- use the new angular syntax as for Controllers (and remove $scope, etc) as a sample for new best practices ...
 	- check if disabling asset-pipeline plugin (and related tags in layouts/gsp pages) even latest resources plugin works good (1.2.9 and higher) ...
@@ -152,6 +150,11 @@ DONE
 	- update test webapp (for Grails 2.4.x) to latest stable Grails 2.4.4 ... ok
 
 - for release 1.3.2 (update dependencies) ... ok
+
+- for release 1.2.26.1 (small fixes): unreleased because since resources 1.2.9 (up to the last 1.2.13) things aren't working ... maybe later
+- for release 1.2.27 (update dependencies, and revert to an Resources plugin release 1.2.8) ... ok
+
+- for release 1.3.4 (update dependencies) ... ok
 
 
 ---------------

@@ -1,6 +1,17 @@
 h4. History
 
 * November 2014
+** 1.3.4 release
+*** Updated to AngularJS 1.3.4
+
+* November 2014
+** 1.2.27 release
+*** Updated to AngularJS 1.2.27
+*** Revert to an older (but fully working) version of Resources Plugin (1.2.8)
+*** Note that plugin release 1.2.26.1 (updating Resources plugin to 1.2.13) has never been published
+*** Commit all work in maintenance branch 1.2.x (so all stuff related to 1.3.x is missing from here)
+
+* November 2014
 ** 1.3.2 release
 *** Updated to AngularJS 1.3.2
 
