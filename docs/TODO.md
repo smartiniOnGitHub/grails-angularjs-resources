@@ -155,6 +155,7 @@ DONE
 - for release 1.2.27 (update dependencies, and revert to an Resources plugin release 1.2.8) ... ok
 
 - for release 1.3.4 (update dependencies) ... ok
+- for release 1.3.7 (update dependencies) ... ok
 
 
 ---------------
