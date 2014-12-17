@@ -140,5 +140,6 @@ DONE
 	- note: this has never been released !! ... ok
 
 - for release 1.2.27 (update dependencies, and revert to an Resources plugin release 1.2.8) ... ok
+- for release 1.2.28 (update dependencies) ... ok
 
 ---------------

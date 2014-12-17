@@ -16,7 +16,7 @@
  */
 
 class AngularjsResourcesGrailsPlugin {
-    def version = "1.2.27"
+    def version = "1.2.28"
     def grailsVersion = "2.2 > *"
     def title = "AngularJS Resources Plugin"
     def author = "Sandro Martini, originally developed by Vladimír Oraný"
