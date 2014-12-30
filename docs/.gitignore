@@ -1,33 +1,45 @@
 .DS_Store
 .hg
 .svn
+.git
 .gradle
 .cache
 .metadata
 .settings
-# .classpath
-# .project
+.classpath
+.project
 *.log
 *.iws
+.idea/
+*.iml
+*.md5
+*.sha1
 # *Db.properties
 # *Db.script
 *~*
 # *~
 *.bak
-/*.db
-/*.zip
+*.class
+Thumbs.db
+*.db
+*.zip
+*.tar
+*.tar.gz
+*.ser
+_old
+bin
+build
+buildPlugins
+classes
+dist
+out
+private
+# server
+target
+target-eclipse
+temp
+tmp
 /plugin.xml
-/*.log
 /*DB.*
-/*.ser
 /.link_to_grails_plugins/
-/_old/
-/bin/
-/out/
-/private/
-# /server/
-/target/
-/target-eclipse/
-/temp/
-/web-app/plugins
 /web-app/WEB-INF/classes
