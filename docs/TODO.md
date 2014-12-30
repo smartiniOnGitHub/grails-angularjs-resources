@@ -13,6 +13,7 @@ TODO
 
 
 - future:
+	- add (in project root) a CHANGELOG.md and move there all things done ...
 	- verify if restore the module angular-autobind (and related angular-manual.js file ...
 	- verify if add a config key for disabling the minification of JavaScript files (but only for DEV environment) ...
 	- use bower (from Node.js) to handle dependencies to static resources (where possible) ...
@@ -157,6 +158,7 @@ DONE
 
 - for release 1.3.4 (update dependencies) ... ok
 - for release 1.3.7 (update dependencies) ... ok
+- for release 1.3.8 (update dependencies) ... ok
 
 
 ---------------
