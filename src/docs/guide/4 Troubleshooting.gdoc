@@ -14,6 +14,6 @@ h4. Workarounds
 ** All it's good the same, those files are not required in test phase (at least now)
 
 * Resources Plugin with problems when jQuery is enabled
-** Up to now, the latest version fully working of the Resources Plugin is 1.2.8
+** An older version of the Resources Plugin working (with jQuery) was 1.2.8, otherwise use a new one starting from 1.2.14
 
 

@@ -32,7 +32,8 @@ grails.doc.title   = 'AngularJS Grails Plugin'
 
 
 // What URL patterns should be processed by the resources plugin
-// grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*']
+// grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
+// grails.resources.adhoc.includes = ['/images/**', '/css/**', '/js/**', '/plugins/**']
 // grails.resources.debug = true
 
 

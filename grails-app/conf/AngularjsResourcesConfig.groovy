@@ -15,4 +15,5 @@
  * limitations under the License.
  */
 
+// grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
 grails.resources.adhoc.patterns = ["/images/*", "*.css", "*.js", "*.map"]

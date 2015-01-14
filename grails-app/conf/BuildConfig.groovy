@@ -19,7 +19,7 @@ grails.project.work.dir = "target"
 grails.project.source.level = 1.6
 grails.project.target.level = 1.6
 
-def angularJSVersion = '1.3.8'
+def angularJSVersion = '1.3.9'
 
 grails.project.dependency.resolution = {
 
@@ -39,7 +39,7 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        runtime ':resources:1.2.8', {
+        runtime ':resources:1.2.14', {
             export = false
         }
 
