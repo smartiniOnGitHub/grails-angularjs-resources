@@ -2,8 +2,6 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<!-- <meta name="layout" content="main"/>  //-->
-		<!-- <meta name="layout" content="angularSampleGrails/asgc"/>  //-->
 		<meta name="layout" content="angularSampleGrails/asgc"/>
 		<title>Page for AngularSampleGrailsController</title>
 	</head>
@@ -26,9 +24,9 @@
 		<br/>
 
 
-		<!-- // unnecessary here because ng-app is already set for the full html page (in the layout) ...
+		<%-- // unnecessary here because ng-app is already set for the full html page (in the layout) ...
 		<div ng-app="app">
-		//-->
+		//--%>
 		<div>
 			<h3>AngularJS, Data Binding sample</h3>
 			<input type="text" ng-model="data.message" placeholder="Type something inside">

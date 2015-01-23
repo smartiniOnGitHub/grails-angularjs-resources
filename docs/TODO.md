@@ -4,10 +4,9 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
+- when AngularJS-1.4.0 will be released, create maintenance branch for 1.3.x in the Plugin ...
+
 - for release 1.3.x (aligned with AngularJS-1.3.x):
-	- make changes proposed by Angular Batarang (Chrome Extension) as a sample for new best practices ...
-	- use the new angular syntax as for Controllers (and remove $scope, etc) as a sample for new best practices ...
-	- check if disabling asset-pipeline plugin (and related tags in layouts/gsp pages) even latest resources plugin works good (1.2.9 and higher) ...
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http (or at least from a static json file) ...
 	- make it compatible (consumable) even with the Asset-Pipeline Plugin, and create another test webapp (with Grails 2-4.x) ...
 
@@ -160,6 +159,9 @@ DONE
 - for release 1.3.7 (update dependencies) ... ok
 - for release 1.3.8 (update dependencies) ... ok
 - for release 1.3.10 (update dependencies) ... change number, update workaround on resources plugin, update dependencies (even in test webapps) ... ok
+	- use the new angular syntax as for Controllers (and remove $scope, etc) as a sample for new best practices ... maybe later
+	- make changes proposed by Angular Batarang (Chrome Extension) as a sample for new best practices ... ok
+	- check if disabling asset-pipeline plugin (and related tags in layouts/gsp pages) even latest resources plugin works good (1.2.9 and higher) ... no, it was a problem in the Resources Plugin, resolved in 1.2.14
 
 
 ---------------

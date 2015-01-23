@@ -16,6 +16,8 @@ if (window.console) {
 </script>
 
 <br/>
-<div class="tt_content">
-<p>AngularJS, sample message from controller: {{message}}</p>
+<div class="tt_content" ng-controller="App2Controller as ctrl">
+	<p>AngularJS, sample not existing "message" property from controller: {{ctrl.message}}</p>
+	<p>AngularJS, sample "foo" property from controller: {{ctrl.foo}}</p>
+	<br/>
 </div>

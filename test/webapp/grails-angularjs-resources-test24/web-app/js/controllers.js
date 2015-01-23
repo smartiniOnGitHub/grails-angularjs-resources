@@ -3,8 +3,10 @@
 /* Controllers */
 
 angular.module('app.controllers', [])
-	.controller('AppCtrl1', ['$scope', function($scope) {
+	.controller('App1Controller', ['$scope', function() {
+		this.foo = 'First';
 	}])
-	.controller('AppCtrl2', ['$scope', function($scope) {
+	.controller('App2Controller', ['$scope', function() {
+		this.foo = 'Second';
 	}])
 ;
