@@ -4,8 +4,6 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.3.10 (update dependencies) ... change number, and update workaround on resources plugin, all other stuff has to be done ...
-
 - for release 1.3.x (aligned with AngularJS-1.3.x):
 	- make changes proposed by Angular Batarang (Chrome Extension) as a sample for new best practices ...
 	- use the new angular syntax as for Controllers (and remove $scope, etc) as a sample for new best practices ...
@@ -161,6 +159,7 @@ DONE
 - for release 1.3.4 (update dependencies) ... ok
 - for release 1.3.7 (update dependencies) ... ok
 - for release 1.3.8 (update dependencies) ... ok
+- for release 1.3.10 (update dependencies) ... change number, update workaround on resources plugin, update dependencies (even in test webapps) ... ok
 
 
 ---------------
