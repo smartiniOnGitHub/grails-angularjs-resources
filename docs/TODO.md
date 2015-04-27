@@ -162,6 +162,8 @@ DONE
 	- use the new angular syntax as for Controllers (and remove $scope, etc) as a sample for new best practices ... maybe later
 	- make changes proposed by Angular Batarang (Chrome Extension) as a sample for new best practices ... ok
 	- check if disabling asset-pipeline plugin (and related tags in layouts/gsp pages) even latest resources plugin works good (1.2.9 and higher) ... no, it was a problem in the Resources Plugin, resolved in 1.2.14
+- for release 1.3.15 (update dependencies) ... ok
+	- update test webapp (for Grails 2.4.x) to latest stable Grails 2.4.5 ... ok
 
 
 ---------------
