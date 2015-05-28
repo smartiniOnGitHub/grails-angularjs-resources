@@ -4,9 +4,16 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- when AngularJS-1.4.0 will be released, create maintenance branch for 1.3.x in the Plugin ...
+- for release 1.4.0 (update to AngularJS-1.4.x) ... ok
+	- update modules with the new ones (angular-message-format) and remove old/outdated (if any), then update docs ... ok
+	- remove dependency on jQuery Plugin (old 1.11.x version bundled with Grails) ... better, first try with it enabled, the comment it ... wip
+	- add a test webapp (for Grails 2.5.x) to latest stable Grails 2.5.0 ...
+	- update code to updated best practices (if/where required) ...
+	- update Plugin generated docs ...
 
-- for release 1.3.x (aligned with AngularJS-1.3.x):
+
+- for release 1.4.x (aligned with AngularJS-1.4.x):
+	- add a sample filter (maybe in one of test webapps) where any method name that starts with ajax (and with GET or POST) must be an Ajax call ...
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http (or at least from a static json file) ...
 	- make it compatible (consumable) even with the Asset-Pipeline Plugin, and create another test webapp (with Grails 2-4.x) ...
 
@@ -165,5 +172,6 @@ DONE
 - for release 1.3.15 (update dependencies) ... ok
 	- update test webapp (for Grails 2.4.x) to latest stable Grails 2.4.5 ... ok
 
+- when AngularJS-1.4.0 will be released, create maintenance branch for 1.3.x in the Plugin ... ok
 
 ---------------

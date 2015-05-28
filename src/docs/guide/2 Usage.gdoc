@@ -19,7 +19,8 @@ This plugin adds AngularJS resources to the Grails Application.
 It uses new Resources Plugin to handle resources gracefully. 
 Just let your AngularJS resources (services, controllers etc.) depend on *'angular'* module and it's done. 
 Following AngularJS modules are also provided out of box: 
-angular-animate, angular-aria, angular-cookies, angular-loader, angular-messages, angular-resource, angular-route, angular-sanitize, angular-touch.
+angular-animate, angular-aria, angular-cookies, angular-loader, angular-message-format, angular-messages, 
+angular-resource, angular-route, angular-sanitize, angular-touch.
 
 There is also controller for AngularJS scenario testing. 
 Just navigate to <app>/nge2e/<scenario-module-name> to see the results. 

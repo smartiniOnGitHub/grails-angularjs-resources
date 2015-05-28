@@ -77,6 +77,11 @@ modules = {
         resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-aria")],
 			disposition: 'head', exclude:'minify'
     }
+	'angular-message-format' {
+        dependsOn 'angular'
+        resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-message-format")],
+			disposition: 'head', exclude:'minify'
+    }
 	'angular-messages' {
         dependsOn 'angular'
         resource url:[plugin: 'angularjs-resources', dir:'js/angular', file:getJsFile("angular-messages")],
