@@ -20,8 +20,8 @@ grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 grails.project.work.dir = "target/work"
-grails.project.target.level = 1.6
-grails.project.source.level = 1.6
+grails.project.target.level = 1.7
+grails.project.source.level = 1.7
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.plugin.location."angularjs-resources" = "../../../"
@@ -68,7 +68,7 @@ grails.project.dependency.resolution = {
     plugins {
         build ":tomcat:7.0.55.2"
 
-        compile ":asset-pipeline:2.1.5"
+        compile ":asset-pipeline:2.2.3"
         compile ":cache:1.1.8"
         compile ":scaffolding:2.1.2"
 
