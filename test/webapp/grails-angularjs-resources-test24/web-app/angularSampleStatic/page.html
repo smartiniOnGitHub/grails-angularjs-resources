@@ -88,6 +88,16 @@
 		}
 		</script>
 
+		<script>
+		// Sample test if jQuery is available (if not, AngularJS will use its jqLite, now with more performance)
+		if ('undefined' == typeof window.jQuery) {
+			console.log('jQuery not present');
+		} else {
+			// console.log('jQuery present');
+			console.log('jQuery present, version: ', jQuery.fn.jquery);
+		}
+		</script>
+
 		<!--
 		// get application js files for AngularJS ...
 		// of course this is not a recommended approach here ...

@@ -6,8 +6,8 @@ TODO
 
 - for release 1.4.0 (update to AngularJS-1.4.x) ... ok
 	- update modules with the new ones (angular-message-format) and remove old/outdated (if any), then update docs ... ok
-	- remove dependency on jQuery Plugin (old 1.11.x version bundled with Grails) ... better, first try with it enabled, the comment it ... wip
-	- add a test webapp (for Grails 2.5.x) to latest stable Grails 2.5.0 ...
+	- remove dependency on jQuery Plugin (old 1.11.x version bundled with Grails) ... better, first try with it enabled, the comment it ... ok (add some js code block to log to console if jQuery is or isn't present, and if present, print its version)
+	- add a test webapp (for Grails 2.5.x) to latest stable Grails 2.5.0, but without wrapper (not so useful here) ...
 	- update code to updated best practices (if/where required) ...
 	- update Plugin generated docs ...
 
@@ -173,5 +173,8 @@ DONE
 	- update test webapp (for Grails 2.4.x) to latest stable Grails 2.4.5 ... ok
 
 - when AngularJS-1.4.0 will be released, create maintenance branch for 1.3.x in the Plugin ... ok
+
+- for release 1.3.16 (update dependencies) ... ok
+
 
 ---------------
