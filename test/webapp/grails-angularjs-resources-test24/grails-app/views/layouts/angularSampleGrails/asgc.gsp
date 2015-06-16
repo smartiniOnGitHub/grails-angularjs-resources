@@ -37,6 +37,16 @@
 		}
 		</script>
 
+		<script>
+		// Sample test if jQuery is available (if not, AngularJS will use its jqLite, now with more performance)
+		if ('undefined' == typeof window.jQuery) {
+			console.log('jQuery not present');
+		} else {
+			// console.log('jQuery present');
+			console.log('jQuery present, version: ', jQuery.fn.jquery);
+		}
+		</script>
+
 		<div id="grailsLogo" role="banner">
 			<a href="${request.contextPath}"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Home"/></a>
 		</div>

@@ -34,6 +34,16 @@
 		}
 		</script>
 
+		<script>
+		// Sample test if jQuery is available (if not, AngularJS will use its jqLite, now with more performance)
+		if ('undefined' == typeof window.jQuery) {
+			console.log('jQuery not present');
+		} else {
+			// console.log('jQuery present');
+			console.log('jQuery present, version: ', jQuery.fn.jquery);
+		}
+		</script>
+
 	<!-- 
 	// use the JavaScript variable even in an AngularJS block ...
 	// don't do it, because it doesn't work in this way, and because it's against AngularJS best practices (at least it should be done in a different way) ...
