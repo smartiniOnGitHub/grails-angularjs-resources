@@ -21,6 +21,11 @@ log4j = {
 	      'org.hibernate',
 	      'net.sf.ehcache.hibernate'
 
+	error 'org.grails.plugin.resource',
+	      'grails.app.services.org.grails.plugin.resource',
+	      'grails.app.taglib.org.grails.plugin.resource',
+	      'grails.app.resourceMappers.org.grails.plugin.resource'
+
 	warn   'org.mortbay.log'
 
 	// debug 'org.grails.plugin.resource'
@@ -39,3 +44,6 @@ grails.doc.title   = 'AngularJS Grails Plugin'
 
 grails.views.default.codec="none" // none, html, base64
 grails.views.gsp.encoding="UTF-8"
+
+// def angularJsVersion = "1.4.1"
+// grails.angularJsVersion = angularJsVersion  // the version of AngularJs used by the plugin (at runtime)

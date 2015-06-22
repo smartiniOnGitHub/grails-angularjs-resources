@@ -4,7 +4,10 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.4.1 (update dependencies) ...
+- for release 1.4.1 (update dependencies) ... ok
+	- add an AngularJsService, to publish (server side) some useful info, like version, etc ... ok
+	- in test webapp 2.4, show usage for AngularJsService, and update log to show info level ... ok
+	- do some cleanup (and revert leg level, to avoid resources warnings for false positive messages) ...
 
 
 - for release 1.4.x (aligned with AngularJS-1.4.x):
