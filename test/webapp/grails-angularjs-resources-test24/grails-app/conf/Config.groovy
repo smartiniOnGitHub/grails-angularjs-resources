@@ -124,6 +124,7 @@ log4j.main = {
 
 	info 'grails.app.controllers'
 	info 'grails.app.services'
+	info 'grails.app.filters'
 
 	debug 'grails.angularjs.resources'
 

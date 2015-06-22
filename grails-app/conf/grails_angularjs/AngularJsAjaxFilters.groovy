@@ -15,30 +15,30 @@
  * limitations under the License.
  */
 
-log4j = {
-	error 'org.codehaus.groovy.grails',
-	      'org.springframework',
-	      'org.hibernate',
-	      'net.sf.ehcache.hibernate'
+package grails_angularjs
 
-	warn   'org.mortbay.log'
+/**
+ * Filter for all controllers actions that starts with 'ajax' in the name, blocking (and logging) normal (non-ajax) calls to them.
+ */
+class AngularJsAjaxFilters {
 
-	info 'grails_angularjs'
+    def filters = {
+        // all(controller:'*', action:'*') {
+        all(controller:'*', action:'ajax*') {
+            before = {
+				// log.info("filtering action $controllerName.$actionName")
+				if (!request.xhr) {
+					log.info("filtering out non-ajax request to $controllerName.$actionName")
+					return false
+				}
+            }
 
-	// debug 'org.grails.plugin.resource'
+            after = { Map model ->
+            }
+
+            afterView = { Exception e ->
+            }
+        }
+    }
+
 }
-
-grails.doc.authors = 'Sandro Martini, originally developed by Vladimír Oraný'
-grails.doc.license = 'Apache License 2.0'
-grails.doc.title   = 'AngularJS Grails Plugin'
-
-
-// What URL patterns should be processed by the resources plugin
-// grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
-// grails.resources.adhoc.includes = ['/images/**', '/css/**', '/js/**', '/plugins/**']
-// grails.resources.debug = true
-
-
-grails.views.default.codec="none" // none, html, base64
-grails.views.gsp.encoding="UTF-8"
-

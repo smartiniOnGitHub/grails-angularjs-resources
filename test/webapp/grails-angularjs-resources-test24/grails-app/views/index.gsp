@@ -126,6 +126,16 @@
 							Static Controller with page as argument (sample)
 						</a>
 					</li>
+					<li class="static-page">
+						<a href="angularSampleGrails/data?argument1=one&argument2=2">
+							Grails Controller, normal call to its data action (should pass the filter)
+						</a>
+					</li>
+					<li class="static-page">
+						<a href="angularSampleGrails/ajaxData?argument1=one&argument2=2">
+							Grails Controller, normal call to its ajaxData action (should be filtered out by the plugin filter)
+						</a>
+					</li>
 				</ul>
 			</div>
 			<br/><br/>
