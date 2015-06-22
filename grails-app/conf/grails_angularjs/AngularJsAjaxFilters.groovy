@@ -23,7 +23,6 @@ package grails_angularjs
 class AngularJsAjaxFilters {
 
     def filters = {
-        // all(controller:'*', action:'*') {
         all(controller:'*', action:'ajax*') {
             before = {
 				// log.info("filtering action $controllerName.$actionName")
