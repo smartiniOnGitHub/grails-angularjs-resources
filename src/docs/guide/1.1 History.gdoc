@@ -3,6 +3,7 @@ h4. History
 * June 2015
 ** 1.4.1 release
 *** Updated to AngularJS 1.4.1
+*** add AngularJsService, and show its usage in the test webapp 2.4 
 
 * June 2015
 ** 1.4.0 release

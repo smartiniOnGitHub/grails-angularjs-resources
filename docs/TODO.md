@@ -8,6 +8,7 @@ TODO
 	- add an AngularJsService, to publish (server side) some useful info, like version, etc ... ok
 	- in test webapp 2.4, show usage for AngularJsService, and update log to show info level ... ok
 	- do some cleanup (and revert leg level, to avoid resources warnings for false positive messages) ... ok
+	- check if remove Grails Wrapper in the test webapp 24 ... maybe later
 
 
 - for release 1.4.x (aligned with AngularJS-1.4.x):
