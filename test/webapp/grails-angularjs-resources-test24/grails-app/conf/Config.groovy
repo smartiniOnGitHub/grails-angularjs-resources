@@ -120,6 +120,13 @@ log4j.main = {
     //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
     //}
 
+	warn 'grails.app'
+
+	info 'grails.app.controllers'
+	info 'grails.app.services'
+
+	debug 'grails.angularjs.resources'
+
     error  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP
            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
@@ -131,4 +138,9 @@ log4j.main = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+	error 'org.grails.plugin.resource',  // remove false positive warnings from resources plugin
+	      'grails.app.services.org.grails.plugin.resource',
+	      'grails.app.taglib.org.grails.plugin.resource',
+	      'grails.app.resourceMappers.org.grails.plugin.resource'
 }
