@@ -20,22 +20,29 @@ angular.module('app.controllers').controller('DemoCtrl', function() {
 	];
 });
 angular.module('app.controllers').controller('QueryCtrl', function($scope, $http) {
-	var url = '../restSample/index';  // relative url to be able to call another controller
-	// var url = '../restSample/index2';  // sample bad url, to show error ...
+	// use a relative url here to be able to call another controller
+	var url = // '../restSample/index';  // call another controller, and a standard action
+		// '../restSample/notExisting';  // sample bad url, to show error ...
+		// '../restSample/ajaxData';     // call another controller, and an ajax action (filtered by Grails Plugin filter)
+		'../restSample/index';
 	$http.get(url)
 		// .success(function(data, status, headers, config) {
 			// this.data = data;
 		.success(function(response) {
-			console.log("data returned from '" + url + "' is: " + response);
-			console.log("data returned (extract):"
-				+ " message: '" + response.message + "', "
-				+ " timestamp: '" + response.timestamp + "'"
-			);
+			console.log("data returned from '" + url + "' is: '" + response + "'");
+			// console.log("data returned (extract):" + " message: '" + response.message + "', " + " timestamp: '" + response.timestamp + "'");  // ok for single record (old here now) ...
 // debugger;  // manually trigger the debugger
-			$scope.data = response;
+			if (response == null || response == '') {
+				console.error("error by calling '" + url + "', returning an empty response, status: " + response.status + " and content: '" + response + "'");
+				// throw new EmptyResponseException('Empty response');  // need to define EmptyResponseException
+				throw new Object({code: -1, name: 'Empty response', detail: response, status: response.status });
+			}
+			else {
+				$scope.data = response;
+			}
 // TODO: check how to use this instead of $scope (old way) ...
 		})
 		.error(function(data, status, headers, config) {
-			console.error("error by calling '" + url + "', with response status: " + status + ' and content: '+ data);  // log error
+			console.error("error by calling '" + url + "', with response status: " + status + " and content: " + data);  // log error
 		});
 });

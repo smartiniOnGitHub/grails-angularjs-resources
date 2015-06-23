@@ -57,4 +57,13 @@ class RestSampleController
 		}
 	}
 
+    def ajaxData() 
+	{
+		log.info("ajaxData - params: $params")
+
+		// chain action to index, to reuse it
+		def sampleData = [from:'ajaxData']
+		chain(action: "index", model: [data: sampleData])
+	}
+
 }

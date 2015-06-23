@@ -4,22 +4,12 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.4.1 (update dependencies) ... ok
-	- add an AngularJsService, to publish (server side) some useful info, like version, etc ... ok
-	- in test webapp 2.4, show usage for AngularJsService, and update log to show info level ... ok
-	- do some cleanup (and revert leg level, to avoid resources warnings for false positive messages) ... ok
-	- check if remove Grails Wrapper in the test webapp 2.4 ... maybe later
-	- add a AngularJsAjaxFilters where any method name that starts with ajax (and with GET or POST) must be an Ajax call ... ok
-	- AngularJsAjaxFilters, update log to display info level (both in the plugin and in the test webapp 2.4) ... ok
-	- AngularJsAjaxFilters, ensure is will be called only with desired actions ... ok
-	- AngularJsAjaxFilters, show its minimal usage in test webapp 2.4 ... ok
-	- AngularJsAjaxFilters, check if filter only GET or POST query ... maybe it's enough the current implementation
-	- AngularJsAjaxFilters, in test webapp 2.4 add a sample ajax call to sample Grails Controller or the Rest-like one (update related view accordingly) ... ok
-	- Rest sample Controller, in test webapp 2.4, update results returned from index action to return a list of results (more than 1 record), for a more general sample ... ok
-	- Rest sample Controller, in test webapp 2.4, add an ajaxData action, like in the just updated index action ...
+- for release 1.4.2 (update to AngularJS-1.4.x) ...
 
 
 - for release 1.4.x (aligned with AngularJS-1.4.x):
+	- Rest sample Controller, in test webapp 2.4, check AngularJS ajax call to ajaxData action, why it's filtered out by the plugin filter (check if needed some header in AngularJS $http query or similar) ...
+	- Rest sample Controller, in test webapp 2.4, instead of index, call ajaxData action (in controller.js, and info in data.gsp) ...
 	- AngularJsAjaxFilters, check if return HTTP error for filtered out queries (if possible) ...
 	- AngularJsAjaxFilters, se the prefix for controller name, and for action name in a configuration variable (instead resp. of all controllers '*' and the fixed prefix 'ajax*') ...
 	- use AngularJS services/factories for ajax queries, as a sample usage from here ...
@@ -191,6 +181,21 @@ DONE
 - for release 1.4.0 (update to AngularJS-1.4.x) ... ok
 	- update modules with the new ones (angular-message-format) and remove old/outdated (if any), then update docs ... ok
 	- remove dependency on jQuery Plugin (old 1.11.x version bundled with Grails) ... better, first try with it enabled, the comment it ... ok (add some js code block to log to console if jQuery is or isn't present, and if present, print its version)
+	- update Plugin generated docs ... ok
+
+- for release 1.4.1 (update dependencies) ... ok
+	- add an AngularJsService, to publish (server side) some useful info, like version, etc ... ok
+	- in test webapp 2.4, show usage for AngularJsService, and update log to show info level ... ok
+	- do some cleanup (and revert leg level, to avoid resources warnings for false positive messages) ... ok
+	- check if remove Grails Wrapper in the test webapp 2.4 ... maybe later
+	- add a AngularJsAjaxFilters where any method name that starts with ajax (and with GET or POST) must be an Ajax call ... ok
+	- AngularJsAjaxFilters, update log to display info level (both in the plugin and in the test webapp 2.4) ... ok
+	- AngularJsAjaxFilters, ensure is will be called only with desired actions ... ok
+	- AngularJsAjaxFilters, show its minimal usage in test webapp 2.4 ... ok
+	- AngularJsAjaxFilters, check if filter only GET or POST query ... maybe it's enough the current implementation
+	- AngularJsAjaxFilters, in test webapp 2.4 add a sample ajax call to sample Grails Controller or the Rest-like one (update related view accordingly) ... ok
+	- Rest sample Controller, in test webapp 2.4, update results returned from index action to return a list of results (more than 1 record), for a more general sample ... ok
+	- Rest sample Controller, in test webapp 2.4, add an ajaxData action, like in the just updated index action ... ok
 	- update Plugin generated docs ... ok
 
 

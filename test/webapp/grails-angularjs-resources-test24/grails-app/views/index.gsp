@@ -128,13 +128,21 @@
 					</li>
 					<li class="static-page">
 						<a href="angularSampleGrails/data?argument1=one&argument2=2">
-							Grails Controller, normal call to its data action (should pass the filter)
+							Grails Controller, normal call to its data action
 						</a>
+						 (pass the filter)
 					</li>
 					<li class="static-page">
 						<a href="angularSampleGrails/ajaxData?argument1=one&argument2=2">
-							Grails Controller, normal call to its ajaxData action (should be filtered out by the plugin filter)
+							Grails Controller, normal call to its ajaxData action
 						</a>
+						 (filtered out by the plugin filter)
+					</li>
+					<li class="static-page">
+						<a href="restSample/ajaxData?argument1=one&argument2=2">
+							Grails Controller, normal call to its ajaxData action
+						</a>
+						 (filtered out by the plugin filter)
 					</li>
 				</ul>
 			</div>
