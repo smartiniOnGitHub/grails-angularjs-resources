@@ -23,10 +23,57 @@
 		<hr/>
 		<br/>
 
-
 		<div>
+			<h3>AngularJS, AJAX Query sample</h3>
+			<br/>
+			<hr/>
+
+		<script>
+		/*
+		// Sample script using AngularJS objects defined upper (by Grails layout used here)
+		app = angular.module('app');  // update previously defined app
+		// console.log('Angular instance: ', app);
+
+		// important: do not define controllers here because they will overwritten by the inclusion under,
+		// and an error will be thrown by Angular ... instead move them in general controllers js file ...
+
+		app.controller('QueryCtrl', ['$scope', function() {
+				this.foo = 'First';
+		}]);
+		// app.controller('QueryCtrl', function($scope) {
+		// 	$scope.data = {message: 'Hello'};
+		// });
+		 */
+		</script>
+
 		</div>
 		<br/>
-		
+
+		<div ng-controller="DemoCtrl as ctrl">
+			<fieldset>
+				<legend>DemoCtrl:</legend>
+			DemoCtrl data (dump): {{ ctrl.data }}<br/><br/>
+			<ul>
+				<li ng-repeat="x in ctrl.data">
+					{{ x }}
+				</li>
+			</ul>
+			</fieldset>
+		</div>
+		<br/>
+
+		<div ng-controller="QueryCtrl as ctrl">
+			<fieldset>
+				<legend>DemoCtrl:</legend>
+			QueryCtrl data (dump): {{ data }}<br/><br/>
+			<ul>
+				<li ng-repeat="x in data">
+					{{ x }}
+				</li>
+			</ul>
+			</fieldset>
+		</div>
+		<br/>
+
 	</body>
 </html>
