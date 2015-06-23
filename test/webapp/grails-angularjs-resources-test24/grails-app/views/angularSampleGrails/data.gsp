@@ -51,11 +51,12 @@
 
 		<div ng-controller="DemoCtrl as ctrl">
 			<fieldset>
-				<legend>DemoCtrl:</legend>
-			DemoCtrl data (dump): {{ ctrl.data }}<br/><br/>
+				<legend>DemoCtrl (static data inside the DemoCtrl controller):</legend>
+			<!-- DemoCtrl data (dump): {{ ctrl.data }}<br/><br/> //-->
 			<ul>
 				<li ng-repeat="x in ctrl.data">
-					{{ x }}
+					<!-- {{ x }} //-->
+					{{ ::x.id }}: {{ ::x.name }} , description: {{ ::x.description }}, timestamp (formatted, from timestamp): {{ x.timestamp | date: 'dd-MM-yyyy HH:mm:ss.sss' }}
 				</li>
 			</ul>
 			</fieldset>
@@ -64,11 +65,12 @@
 
 		<div ng-controller="QueryCtrl as ctrl">
 			<fieldset>
-				<legend>DemoCtrl:</legend>
-			QueryCtrl data (dump): {{ data }}<br/><br/>
+				<legend>QueryCtrl (ajax query to Grails Controller RestSampleController, action method index):</legend>
+			<!-- QueryCtrl data (dump): {{ data }}<br/><br/> //-->
+			Search: <input ng-model="query"><br/>
 			<ul>
-				<li ng-repeat="x in data">
-					{{ x }}
+				<li ng-repeat="x in data | filter:query">
+					{{ ::x.id }}: {{ ::x.message }} , status: {{ ::x.status }}
 				</li>
 			</ul>
 			</fieldset>

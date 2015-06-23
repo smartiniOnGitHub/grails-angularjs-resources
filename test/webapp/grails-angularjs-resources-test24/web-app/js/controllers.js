@@ -14,9 +14,9 @@ angular.module('app.controllers', [])
 // angular.module('app.controllers').controller('DemoCtrl', function($scope) {
 angular.module('app.controllers').controller('DemoCtrl', function() {
 	this.data = [
-		{ id: 1, name: "First", description: "First description" },
-		{ id: 2, name: "Second", description: "Second description \n multiline" },
-		{ id: 3, name: "Third", description: "" }
+		{ id: 1, name: "First", description: "First description", timestamp: new Date().getTime() },
+		{ id: 2, name: "Second", description: "Second description \n multiline", timestamp: new Date().getTime() },
+		{ id: 3, name: "Third", description: "", timestamp: new Date().getTime() }
 	];
 });
 angular.module('app.controllers').controller('QueryCtrl', function($scope, $http) {
