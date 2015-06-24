@@ -5,6 +5,7 @@ var app = angular.module('app', [
 	'ngRoute', // since AngularJS-1.2.x ...
 	'app.filters', 'app.services', 'app.directives', 'app.controllers'
 ]);
+
 app.config(['$routeProvider', function($routeProvider) {
 	// use relative url (as usual), but note that here Grails need that related pages
 	// must be under web-app/$controllerName/<relativePath> ...
@@ -28,4 +29,9 @@ app.config(['$routeProvider', function($routeProvider) {
 	// fallback mapping
 	$routeProvider.otherwise({redirectTo: '/view1'});
 	// $routeProvider.otherwise({redirectTo: '/empty'});
+}]);
+
+// manually add a common (but not standard) AJAX header to all $http requests, it has been removed as built-in feature in AngularJS to avoid problems with with CORS requests
+app.config(['$httpProvider', function($httpProvider) {
+	$httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
 }]);

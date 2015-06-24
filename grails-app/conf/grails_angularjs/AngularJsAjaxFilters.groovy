@@ -28,6 +28,7 @@ class AngularJsAjaxFilters {
 				// log.info("filtering action $controllerName.$actionName")
 				if (!request.xhr) {
 					log.info("filtering out non-ajax request to $controllerName.$actionName")
+					response.sendError(403)
 					return false
 				}
             }

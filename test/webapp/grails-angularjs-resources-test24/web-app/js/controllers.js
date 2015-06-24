@@ -24,7 +24,8 @@ angular.module('app.controllers').controller('QueryCtrl', function($scope, $http
 	var url = // '../restSample/index';  // call another controller, and a standard action
 		// '../restSample/notExisting';  // sample bad url, to show error ...
 		// '../restSample/ajaxData';     // call another controller, and an ajax action (filtered by Grails Plugin filter)
-		'../restSample/index';
+		'../restSample/ajaxData';
+	// $http({ 'url': url, 'method': method, 'data': data, 'headers': { 'X-Requested-With' :'XMLHttpRequest'} });  // manually set an AJAX marker in request headers
 	$http.get(url)
 		// .success(function(data, status, headers, config) {
 			// this.data = data;

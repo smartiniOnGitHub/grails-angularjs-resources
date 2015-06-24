@@ -10,7 +10,7 @@ servicesModule.value('webapp_context_name', 'grails-angularjs-resources-test'); 
 
 /*
 // TODO: make it work (later) ...
-	.value('webapp_context_name', 'grails-angularjs-resources-test')  // manual set webapp context name here, as a sample
+	.value('webapp_context_name', 'grails-angularjs-resources-test24')  // manual set webapp context name here, as a sample
 // TODO: make it work (later) ...
 	.factory('GrailsRestService', function($http) {  // sample to call a GrailsController that returns REST data in json format
 		var grailsRestService = {};

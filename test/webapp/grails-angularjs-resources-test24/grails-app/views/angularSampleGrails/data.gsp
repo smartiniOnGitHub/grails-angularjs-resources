@@ -65,7 +65,7 @@
 
 		<div ng-controller="QueryCtrl as ctrl">
 			<fieldset>
-				<legend>QueryCtrl (ajax query to Grails Controller RestSampleController, action method index):</legend>
+				<legend>QueryCtrl (ajax query to Grails Controller RestSampleController, action method ajaxData):</legend>
 			<!-- QueryCtrl data (dump): {{ data }}<br/><br/> //-->
 			Search: <input ng-model="query"><br/>
 			<ul>
