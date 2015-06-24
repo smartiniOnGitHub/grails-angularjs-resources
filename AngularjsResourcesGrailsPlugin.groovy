@@ -15,8 +15,12 @@
  * limitations under the License.
  */
 
+import grails.util.Environment
+import groovy.util.ConfigObject
+import groovy.util.ConfigSlurper
+ 
 class AngularjsResourcesGrailsPlugin {
-    def version = "1.4.1"
+    def version = "1.4.2"
     def grailsVersion = "2.2 > *"
     def title = "AngularJS Resources Plugin"
     def author = "Sandro Martini, originally developed by Vladimír Oraný"
@@ -38,4 +42,16 @@ class AngularjsResourcesGrailsPlugin {
 		[name: "Vladimír Oraný", email: "vladimir.orany@appsatori.eu"],
 		[name: "Sandro Martini", email: "sandro.martini@gmail.com"],
 	]
+
+	def doWithSpring = {
+		// merge primary configuration with that provided by the plugin
+		def conf = application.config
+		ConfigSlurper configSlurper = new ConfigSlurper(Environment.getCurrent().getName());
+		ConfigObject configPrimary = conf.grails.angularjs_resources
+		ConfigObject configSecondary = configSlurper.parse(application.classLoader.loadClass("AngularjsResourcesConfig"))
+		ConfigObject config = new ConfigObject();
+		config.putAll(configSecondary.angularjs_resources.merge(configPrimary))
+		conf.grails.angularjs_resources = config;
+	}
+
 }

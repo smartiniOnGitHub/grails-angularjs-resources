@@ -18,12 +18,19 @@
 package grails_angularjs
 
 /**
- * Filter for all controllers actions that starts with 'ajax' in the name, blocking (and logging) normal (non-ajax) calls to them.
+ * Filter for all controllers actions that starts with the given prefix in the name, blocking (and logging) normal (non-ajax) calls to them.
  */
 class AngularJsAjaxFilters {
 
+	def grailsApplication
+
     def filters = {
-        all(controller:'*', action:'ajax*') {
+		def conf = grailsApplication.config
+		def prefixForFilteredControllers = conf.grails.angularjs_resources.filter.controllers
+		def prefixForFilteredActions     = conf.grails.angularjs_resources.filter.actions
+		// println "grailsApplication.config.grails.angularjs_resources.filter.controllers = $prefixForFilteredControllers, actions = $prefixForFilteredActions"
+
+        all(controller: prefixForFilteredControllers, action: prefixForFilteredActions) {
             before = {
 				// log.info("filtering action $controllerName.$actionName")
 				if (!request.xhr) {

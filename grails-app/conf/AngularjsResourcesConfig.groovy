@@ -17,3 +17,7 @@
 
 // grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
 grails.resources.adhoc.patterns = ["/images/*", "*.css", "*.js", "*.map"]
+
+// default settings for plugin filter for ajax requests
+angularjs_resources.filter.controllers = "*"
+angularjs_resources.filter.actions     = "ajax*"
