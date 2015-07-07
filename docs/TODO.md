@@ -4,14 +4,7 @@ grails-angularjs-resources - TODO
 TODO
 ----
 
-- for release 1.4.2 (update dependencies and small updates) ...
-	- Rest sample Controller, in test webapp 2.4, check AngularJS ajax call to ajaxData action, why it's filtered out by the plugin filter (check if needed some header in AngularJS $http query or similar) ... ok (updated sample js code to force add a non standard, but common, and used in Grails xhr method called by my filter) request header
-	- Rest sample Controller, in test webapp 2.4, instead of index, call ajaxData action (in controller.js, and info in data.gsp) ... ok
-	- AngularJsAjaxFilters, check if return HTTP error for filtered out queries (if possible), or forward/redirect to a dedicated error page ... ok (returning an HTTP error 403)
-	- AngularJsAjaxFilters, set the prefix for controller name, and for action name in a configuration variable (instead resp. of all controllers '*' and the fixed prefix 'ajax*'), in plugin AngularjsResourcesConfig (and then load/merge its config in plugin doWithSpring closure) ... ok
-	- update plugin docs with new settings ...
-	- update Plugin generated docs ...
-
+- for release 1.3.17, in maintenance branch 1.3.x (update dependencies) ... do if/when needed ...
 
 - for release 1.4.x (aligned with AngularJS-1.4.x):
 	- AngularJsAjaxFilters, in test webapp 2.4 override default settings (for example for actions prefix) and make it work ...
@@ -188,7 +181,7 @@ DONE
 - for release 1.4.1 (update dependencies) ... ok
 	- add an AngularJsService, to publish (server side) some useful info, like version, etc ... ok
 	- in test webapp 2.4, show usage for AngularJsService, and update log to show info level ... ok
-	- do some cleanup (and revert leg level, to avoid resources warnings for false positive messages) ... ok
+	- do some cleanup (and revert log level, to avoid resources warnings for false positive messages) ... ok
 	- check if remove Grails Wrapper in the test webapp 2.4 ... maybe later
 	- add a AngularJsAjaxFilters where any method name that starts with ajax (and with GET or POST) must be an Ajax call ... ok
 	- AngularJsAjaxFilters, update log to display info level (both in the plugin and in the test webapp 2.4) ... ok
@@ -199,6 +192,14 @@ DONE
 	- Rest sample Controller, in test webapp 2.4, update results returned from index action to return a list of results (more than 1 record), for a more general sample ... ok
 	- Rest sample Controller, in test webapp 2.4, add an ajaxData action, like in the just updated index action ... ok
 	- finish initial version of the test webapp: get data from the Rest Controller via service/resource/http (or at least from a static json file) ... ok
+	- update Plugin generated docs ... ok
+
+- for release 1.4.2 (update dependencies and small updates) ... ok
+	- Rest sample Controller, in test webapp 2.4, check AngularJS ajax call to ajaxData action, why it's filtered out by the plugin filter (check if needed some header in AngularJS $http query or similar) ... ok (updated sample js code to force add a non standard, but common, and used in Grails xhr method called by my filter) request header
+	- Rest sample Controller, in test webapp 2.4, instead of index, call ajaxData action (in controller.js, and info in data.gsp) ... ok
+	- AngularJsAjaxFilters, check if return HTTP error for filtered out queries (if possible), or forward/redirect to a dedicated error page ... ok (returning an HTTP error 403)
+	- AngularJsAjaxFilters, set the prefix for controller name, and for action name in a configuration variable (instead resp. of all controllers '*' and the fixed prefix 'ajax*'), in plugin AngularjsResourcesConfig (and then load/merge its config in plugin doWithSpring closure) ... ok
+	- update plugin docs with new settings ... ok
 	- update Plugin generated docs ... ok
 
 

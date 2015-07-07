@@ -27,7 +27,7 @@ import javax.annotation.PreDestroy
 class AngularJsService
 {
 	static transactional = false  // transactional behaviour not needed here ...
-	private static final String angularJsVersion = "1.4.1"  // define here instead of BuildConfig
+	private static final String angularJsVersion = "1.4.2"  // define here instead of BuildConfig
 	
 	def grailsApplication
 

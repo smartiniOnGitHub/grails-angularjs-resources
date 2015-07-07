@@ -1,5 +1,12 @@
 h4. History
 
+* July 2015
+** 1.4.2 release
+*** Updated to AngularJS 1.4.2
+*** AngularJsAjaxFilters, set default prefix to check all controllers and all action names that starts with 'ajax', but both can be overridden by a configuration variable (resp. angularjs_resources.filter.controllers , angularjs_resources.filter.actions)
+*** AngularJsAjaxFilters, now returns HTTP error 403 for filtered out queries
+*** update test webapp 2.4 to show AngularJsAjaxFilters usage, and in one page do an ajax call to ajaxData action of Rest sample Controller (from an xhr right request, and from another non-xhr that is filtered out); update even sample js code to force add the usual (non standard but common) request header used by default in Grails check for xhr requests ('X-Requested-With' set to 'XMLHttpRequest')
+
 * June 2015
 ** 1.4.1 release
 *** Updated to AngularJS 1.4.1
